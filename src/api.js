@@ -2,8 +2,11 @@
 import axios from "axios";
 
 
-from fastapi import FastAPI
+/*from fastapi import FastAPI
 app = FastAPI(title="DemandSync Backend", version="0.1.0")
+*/
+
+// Base URL = backend 
 
 const api = axios.create({
   baseURL: BASE_URL,
