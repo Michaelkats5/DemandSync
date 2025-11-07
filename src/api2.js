@@ -47,7 +47,7 @@ export const createSupplier = async (supplierData) => {
   return response.data;
 };
 
-// ----------- ORDERS -----------
+// ORDERS 
 export const getOrders = async (limit = 50, offset = 0) => {
   const response = await api.get("/orders", {
     params: { limit, offset },
@@ -60,13 +60,13 @@ export const createOrder = async (orderData) => {
   return response.data;
 };
 
-// ----------- FORECASTS -----------
+// FORECASTS
 export const upsertForecasts = async (rows) => {
-  const response = await api.post("/forecasts/upsert", rows);
+  const response = await api.post("/forecasts/upsert", days);
   return response.data;
 };
 
-// ----------- EXPORT -----------
+// EXPORT
 export default {
   checkHealth,
   getProducts,
