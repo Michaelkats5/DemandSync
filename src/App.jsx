@@ -11,21 +11,33 @@ import Opportunities from "./components/opportunities.jsx";
 import Recommendations from "./components/Recommendations.jsx";
 import OrdersTable from "./components/OrdersTable.jsx";
 
-// data
-import { ORDERS } from "./data/orders.js";
-import {
-  HOME_KPIS,
-  SUPPLY_BY_REGION,
-  SPEND_BY_CATEGORY,
-  HEALTH,
-  SUSTAINABILITY,
-  DIGITAL_MATURITY,
-  INVENTORY_BARS,
-  DELAY_TREND,
-  QUICK_TILES,
-  OPPORTUNITIES,
-  RECOMMENDATIONS,
-} from "./data/home.js";
+import { getAllDashboardData, getOrdersList } from "./api/api.js";
+
+export default function App() {
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(null);
+  const [orders, setOrders] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const [dashboard, ordersList] = await Promise.all([
+          getAllDashboardData(),
+          getOrdersList(),
+        ]);
+        setData(dashboard);
+        setOrders(ordersList);
+      } catch (error) {
+        console.error('API Error:', error);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchData();
+  }, []);
+
+if (loading) return <div className="container page"><div className="panel" style={{padding:18}}>Loading...</div></div>;
+if (!data) return <div className="container page"><div className="panel" style={{padding:18}}>Error loading data</div></div>;
 
 export default function App() {
   return (
