@@ -6,6 +6,14 @@ from . import crud, schemas
 
 app = FastAPI(title="DemandSync Backend", version="0.1.0")
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://localhost:5173", "http://localhost:5174"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 def get_db():
     db = SessionLocal()
     try:
@@ -20,6 +28,8 @@ def on_startup():
 @app.get("/health")
 def health():
     return {"ok": True}
+
+app.include_router(bridge_router)
 
 # Products
 @app.get("/products", response_model=list[schemas.ProductOut])
