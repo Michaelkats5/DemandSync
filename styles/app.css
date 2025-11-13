@@ -1,0 +1,16 @@
+.app { display: grid; grid-template-rows: auto 1fr; height: 100vh; font-family: sans-serif; }
+.topbar { background: #0d47a1; color: white; padding: 12px 20px; font-weight: 600; }
+.shell { display: grid; grid-template-columns: 220px 1fr; }
+.sidebar { background: #f3f4f6; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.sidebar a { text-decoration: none; color: #111; font-weight: 500; }
+.sidebar a.active { color: #0d47a1; }
+.main { padding: 20px; overflow-y: auto; }
+.card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; }
+.card__head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.card__title { font-weight: 600; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.stack-y { display: grid; row-gap: 16px; }
+.btn { background: #0d47a1; color: white; padding: 6px 12px; border: none; border-radius: 6px; cursor: pointer; }
+.table-wrap table { width: 100%; border-collapse: collapse; }
+.table-wrap th, .table-wrap td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+.table-wrap th { background: #f9fafb; }

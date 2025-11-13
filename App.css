@@ -1,0 +1,73 @@
+:root{
+  --bg:#0b1225;
+  --panel:#0f1630;
+  --border:#1e2a4a;
+  --text:#e6eefc;
+  --sub:#96a3c3;
+  --accent:#6387ff;
+}
+
+html,body,#root{height:100%}
+body{margin:0;background:radial-gradient(1200px 800px at 20% -10%,#152044 0,#0b1225 60%);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+.container{max-width:1200px;margin:24px auto;padding:0 16px}
+.panel{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:16px;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.02) inset;
+}
+.title{margin:0;font-size:20px}
+.muted{color:var(--sub);font-size:12px}
+
+/* ===== Page header ===== */
+.page-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+/* ===== Alerts ===== */
+.alerts{display:grid;gap:10px}
+.alert{
+  font-size:14px; line-height:1.35;
+  padding:10px 12px; border-radius:10px;
+  border:1px solid var(--border);
+  background:#0b1430;
+}
+.alert.danger{background:rgba(239,68,68,.15);border-color:rgba(239,68,68,.3)}
+.alert.warning{background:rgba(245,158,11,.15);border-color:rgba(245,158,11,.35)}
+.alert.info{background:rgba(59,130,246,.12);border-color:rgba(59,130,246,.35)}
+
+/* ===== Grid helpers ===== */
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:12px;
+}
+
+/* ===== Badges / links ===== */
+.badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:12px;padding:6px 10px;border-radius:999px;
+  border:1px solid var(--border);color:var(--text);
+  background:#0b1430;
+}
+
+/* ===== Tables ===== */
+.table-wrap{ margin-top:12px }
+.table-card{ background:var(--panel); border:1px solid var(--border); border-radius:14px; overflow:hidden }
+.table-head{ display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-bottom:1px solid var(--border) }
+table{ width:100%; border-collapse:collapse }
+th,td{ padding:12px 16px; border-top:1px solid var(--border) }
+th{ text-align:left; color:var(--sub); font-weight:600; font-size:12px }
+td a{ color:#8ab4ff }
+.badge.urgent{ background:rgba(225,29,72,.2); border-color:rgba(225,29,72,.45) }
+.badge.high{ background:rgba(245,158,11,.18); border-color:rgba(245,158,11,.45) }
+.badge.medium{ background:rgba(99,102,241,.18); border-color:rgba(99,102,241,.45) }
+
+/* ===== Cards inside components use .panel already ===== */
+
+/* ===== Your previous custom tweaks (if any) can go here ===== */
