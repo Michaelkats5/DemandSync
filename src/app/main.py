@@ -1,0 +1,69 @@
+from __future__ import annotations
+from fastapi import FastAPI, Depends, HTTPException
+from sqlalchemy.orm import Session
+from .database import SessionLocal, init_db
+from . import crud, schemas
+
+app = FastAPI(title="DemandSync Backend", version="0.1.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://localhost:5173", "http://localhost:5174"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+@app.on_event("startup")
+def on_startup():
+    init_db()
+
+@app.get("/health")
+def health():
+    return {"ok": True}
+
+app.include_router(bridge_router)
+
+# Products
+@app.get("/products", response_model=list[schemas.ProductOut])
+def list_products(q: str | None = None, limit: int = 50, offset: int = 0, db: Session = Depends(get_db)):
+    return crud.list_products(db, q=q, limit=limit, offset=offset)
+
+@app.post("/products", response_model=schemas.ProductOut, status_code=201)
+def create_product(payload: schemas.ProductCreate, db: Session = Depends(get_db)):
+    return crud.create_product(db, **payload.model_dump())
+
+# Suppliers
+@app.get("/suppliers", response_model=list[schemas.SupplierOut])
+def list_suppliers(limit: int = 100, offset: int = 0, db: Session = Depends(get_db)):
+    return crud.list_suppliers(db, limit=limit, offset=offset)
+
+@app.post("/suppliers", response_model=schemas.SupplierOut, status_code=201)
+def create_supplier(payload: schemas.SupplierCreate, db: Session = Depends(get_db)):
+    return crud.create_supplier(db, **payload.model_dump())
+
+# Orders
+@app.get("/orders")
+def list_orders(limit: int = 50, offset: int = 0, db: Session = Depends(get_db)):
+    orders = crud.list_orders(db, limit=limit, offset=offset)
+    return [{"id": o.id, "status": o.status, "eta_date": o.eta_date, "created_at": o.created_at} for o in orders]
+
+@app.post("/orders", status_code=201)
+def create_order(payload: schemas.OrderCreate, db: Session = Depends(get_db)):
+    order = crud.create_order(db, supplier_id=payload.supplier_id, eta_date=payload.eta_date, items=[i.model_dump() for i in payload.items])
+    return {"id": order.id, "status": order.status, "eta_date": order.eta_date, "created_at": order.created_at}
+
+# Forecasts
+@app.post("/forecasts/upsert")
+def upsert_forecasts(rows: list[dict], db: Session = Depends(get_db)):
+    if not rows:
+        raise HTTPException(status_code=400, detail="rows required")
+    n = crud.upsert_forecasts(db, rows)
+    return {"upserted": n}
