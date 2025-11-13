@@ -1,5 +1,5 @@
 from __future__ import annotations
-from sqlalchemy import String, Integer, ForeignKey, Boolean, Numeric, Date, DateTime, Text, UniqueConstraint, func
+from sqlalchemy import String, Integer, ForeignKey, Boolean, Numeric, Date, DateTime, Text, UniqueConstraint, func, Time
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from .database import Base
 
@@ -141,3 +141,146 @@ class KpiSnapshot(Base):
     backlog_po_count: Mapped[int] = mapped_column(Integer, default=0)
     notes: Mapped[str | None] = mapped_column(Text)
     __table_args__ = (UniqueConstraint("date", name="uq_kpi_date"),)
+
+# external factors for forecasting
+class CalendarDay(Base):
+    __tablename__ = "calendar_days"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    date: Mapped["Date"] = mapped_column(Date, unique=True, nullable=False)
+    is_weekend: Mapped[bool] = mapped_column(Boolean, default=False)
+    is_holiday: Mapped[bool] = mapped_column(Boolean, default=False)
+    holiday_name: Mapped[str | None] = mapped_column(String(120))
+    is_payday: Mapped[bool] = mapped_column(Boolean, default=False)
+    season: Mapped[str] = mapped_column(String(20), nullable=False)  # spring, summer, fall, winter
+
+class LocalEvent(Base):
+    __tablename__ = "local_events"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    name: Mapped[str] = mapped_column(String(180), nullable=False)
+    date: Mapped["Date"] = mapped_column(Date, nullable=False)
+    start_time: Mapped["Time | None"] = mapped_column(Time)
+    end_time: Mapped["Time | None"] = mapped_column(Time)
+    impact_score: Mapped[float] = mapped_column(Numeric(3,1), nullable=False)  # 1 to 5
+    notes: Mapped[str | None] = mapped_column(Text)
+    created_at: Mapped["DateTime"] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+class WeatherDay(Base):
+    __tablename__ = "weather_days"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    date: Mapped["Date"] = mapped_column(Date, unique=True, nullable=False)
+    avg_temp: Mapped[float | None] = mapped_column(Numeric(6,2))
+    rainfall_mm: Mapped[float | None] = mapped_column(Numeric(8,2))
+    weather_type: Mapped[str | None] = mapped_column(String(32))  # sunny, rain, storm, snow, etc
+    weather_score: Mapped[float | None] = mapped_column(Numeric(3,2))  # -1 to +1
+
+class EconMonth(Base):
+    __tablename__ = "econ_months"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    year: Mapped[int] = mapped_column(Integer, nullable=False)
+    month: Mapped[int] = mapped_column(Integer, nullable=False)
+    inflation_rate: Mapped[float | None] = mapped_column(Numeric(6,4))
+    gas_price_index: Mapped[float | None] = mapped_column(Numeric(8,2))
+    consumer_confidence: Mapped[float | None] = mapped_column(Numeric(6,2))
+    __table_args__ = (UniqueConstraint("year", "month", name="uq_econ_year_month"),)
+
+# Price forecasting models
+class PriceHistory(Base):
+    __tablename__ = "price_history"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    item_id: Mapped[int] = mapped_column(ForeignKey("products.id"), nullable=False)
+    vendor: Mapped[str] = mapped_column(String(100), nullable=False)  # US Foods, Spec's, etc
+    date: Mapped["Date"] = mapped_column(Date, nullable=False)
+    unit_price: Mapped[float] = mapped_column(Numeric(10,2), nullable=False)
+    unit_cost: Mapped[float] = mapped_column(Numeric(10,2), nullable=False)
+    purchase_quantity: Mapped[int] = mapped_column(Integer, nullable=False)
+    shelf_life_days: Mapped[int] = mapped_column(Integer, nullable=False)
+    category: Mapped[str] = mapped_column(String(50), nullable=False)  # meat, produce, liquor, etc
+    season: Mapped[str] = mapped_column(String(20), nullable=False)  # auto computed
+    created_at: Mapped["DateTime"] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    product: Mapped["Product"] = relationship()
+
+class VendorVolatility(Base):
+    __tablename__ = "vendor_volatility"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    vendor: Mapped[str] = mapped_column(String(100), unique=True, nullable=False)
+    avg_price_change: Mapped[float] = mapped_column(Numeric(6,4), nullable=False)  # percentage
+    stdev_price_change: Mapped[float] = mapped_column(Numeric(6,4), nullable=False)  # percentage
+    reliability_score: Mapped[float] = mapped_column(Numeric(4,2), nullable=False)  # 0.0 to 1.0
+    lead_time_days: Mapped[int] = mapped_column(Integer, nullable=False)
+    updated_at: Mapped["DateTime"] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+# Restaurant operations models
+class Location(Base):
+    __tablename__ = "locations"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    name: Mapped[str] = mapped_column(String(180), nullable=False)
+    region: Mapped[str | None] = mapped_column(String(100))
+    address: Mapped[str | None] = mapped_column(Text)
+    active: Mapped[bool] = mapped_column(Boolean, default=True)
+    created_at: Mapped["DateTime"] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+class PrepRecord(Base):
+    __tablename__ = "prep_records"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    location_id: Mapped[int] = mapped_column(ForeignKey("locations.id"), nullable=False)
+    product_id: Mapped[int] = mapped_column(ForeignKey("products.id"), nullable=False)
+    date: Mapped["Date"] = mapped_column(Date, nullable=False)
+    ideal_prep_qty: Mapped[float] = mapped_column(Numeric(10,2), nullable=False)
+    actual_prep_qty: Mapped[float] = mapped_column(Numeric(10,2), nullable=False)
+    waste_qty: Mapped[float] = mapped_column(Numeric(10,2), default=0)
+    waste_score: Mapped[float] = mapped_column(Numeric(5,2), default=0)  # 0-100
+    trim_yield: Mapped[float | None] = mapped_column(Numeric(5,2))  # percentage
+    created_at: Mapped["DateTime"] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    location: Mapped["Location"] = relationship()
+    product: Mapped["Product"] = relationship()
+
+class Cocktail(Base):
+    __tablename__ = "cocktails"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    name: Mapped[str] = mapped_column(String(180), nullable=False)
+    category: Mapped[str | None] = mapped_column(String(50))  # classic, signature, etc
+    cost_per_drink: Mapped[float] = mapped_column(Numeric(8,2), nullable=False)
+    selling_price: Mapped[float] = mapped_column(Numeric(8,2), nullable=False)
+    margin_percent: Mapped[float] = mapped_column(Numeric(5,2), nullable=False)
+    price_sensitivity: Mapped[str | None] = mapped_column(String(20))  # low, medium, high
+    active: Mapped[bool] = mapped_column(Boolean, default=True)
+    created_at: Mapped["DateTime"] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+class CocktailIngredient(Base):
+    __tablename__ = "cocktail_ingredients"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    cocktail_id: Mapped[int] = mapped_column(ForeignKey("cocktails.id"), nullable=False)
+    product_id: Mapped[int] = mapped_column(ForeignKey("products.id"), nullable=False)
+    quantity: Mapped[float] = mapped_column(Numeric(8,2), nullable=False)
+    unit: Mapped[str] = mapped_column(String(20), default="oz")
+    cocktail: Mapped["Cocktail"] = relationship()
+    product: Mapped["Product"] = relationship()
+
+class SalesRecord(Base):
+    __tablename__ = "sales_records"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    location_id: Mapped[int] = mapped_column(ForeignKey("locations.id"), nullable=False)
+    date: Mapped["Date"] = mapped_column(Date, nullable=False)
+    product_id: Mapped[int | None] = mapped_column(ForeignKey("products.id"))
+    cocktail_id: Mapped[int | None] = mapped_column(ForeignKey("cocktails.id"))
+    quantity: Mapped[int] = mapped_column(Integer, nullable=False)
+    revenue: Mapped[float] = mapped_column(Numeric(10,2), nullable=False)
+    cost: Mapped[float] = mapped_column(Numeric(10,2), nullable=False)
+    service_type: Mapped[str | None] = mapped_column(String(20))  # dine_in, takeout, delivery
+    location: Mapped["Location"] = relationship()
+    product: Mapped["Product"] = relationship()
+    cocktail: Mapped["Cocktail"] = relationship()
+
+class WasteAlert(Base):
+    __tablename__ = "waste_alerts"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    location_id: Mapped[int] = mapped_column(ForeignKey("locations.id"), nullable=False)
+    product_id: Mapped[int] = mapped_column(ForeignKey("products.id"), nullable=False)
+    alert_type: Mapped[str] = mapped_column(String(32), nullable=False)  # expiring, stockout, overstock
+    severity: Mapped[str] = mapped_column(String(16), default="medium")  # low, medium, high
+    message: Mapped[str] = mapped_column(Text, nullable=False)
+    expires_at: Mapped["Date | None"] = mapped_column(Date)
+    resolved: Mapped[bool] = mapped_column(Boolean, default=False)
+    created_at: Mapped["DateTime"] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    location: Mapped["Location"] = relationship()
+    product: Mapped["Product"] = relationship()

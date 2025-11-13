@@ -1,0 +1,602 @@
+[
+  {
+    "gm_item": "Brooms",
+    "category": "Janitorial",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 25.0,
+    "replacement_cycle_months": 12,
+    "use_cases": [
+      "Floor cleaning"
+    ]
+  },
+  {
+    "gm_item": "Mops",
+    "category": "Janitorial",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 35.0,
+    "replacement_cycle_months": 12,
+    "use_cases": [
+      "Floor cleaning"
+    ]
+  },
+  {
+    "gm_item": "Dustpans",
+    "category": "Janitorial",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 12.0,
+    "replacement_cycle_months": 24,
+    "use_cases": [
+      "Floor cleaning"
+    ]
+  },
+  {
+    "gm_item": "Scrub Brushes",
+    "category": "Janitorial",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 15.0,
+    "replacement_cycle_months": 6,
+    "use_cases": [
+      "Deep cleaning"
+    ]
+  },
+  {
+    "gm_item": "Utility Carts",
+    "category": "Janitorial",
+    "subcategory": "Equipment",
+    "unit_of_measure": "ea",
+    "vendor_type": "Equipment Vendor",
+    "estimated_cost": 250.0,
+    "replacement_cycle_months": 60,
+    "use_cases": [
+      "Transport"
+    ]
+  },
+  {
+    "gm_item": "Squeegees",
+    "category": "Janitorial",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 20.0,
+    "replacement_cycle_months": 12,
+    "use_cases": [
+      "Window cleaning"
+    ]
+  },
+  {
+    "gm_item": "Step Ladders",
+    "category": "Janitorial",
+    "subcategory": "Equipment",
+    "unit_of_measure": "ea",
+    "vendor_type": "Equipment Vendor",
+    "estimated_cost": 150.0,
+    "replacement_cycle_months": 120,
+    "use_cases": [
+      "Maintenance"
+    ]
+  },
+  {
+    "gm_item": "Pot Scrubbers",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 8.0,
+    "replacement_cycle_months": 3,
+    "use_cases": [
+      "Pot cleaning"
+    ]
+  },
+  {
+    "gm_item": "Grill Brushes",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 25.0,
+    "replacement_cycle_months": 6,
+    "use_cases": [
+      "Grill maintenance"
+    ]
+  },
+  {
+    "gm_item": "Sanitizer Buckets",
+    "category": "Janitorial",
+    "subcategory": "Equipment",
+    "unit_of_measure": "ea",
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 18.0,
+    "replacement_cycle_months": 24,
+    "use_cases": [
+      "Sanitizing"
+    ]
+  },
+  {
+    "gm_item": "Safety Cones",
+    "category": "Safety",
+    "subcategory": "Equipment",
+    "unit_of_measure": "ea",
+    "vendor_type": "Safety Supply",
+    "estimated_cost": 35.0,
+    "replacement_cycle_months": 60,
+    "use_cases": [
+      "Safety"
+    ]
+  },
+  {
+    "gm_item": "Wet Floor Signs",
+    "category": "Safety",
+    "subcategory": "Equipment",
+    "unit_of_measure": "ea",
+    "vendor_type": "Safety Supply",
+    "estimated_cost": 25.0,
+    "replacement_cycle_months": 60,
+    "use_cases": [
+      "Safety"
+    ]
+  },
+  {
+    "gm_item": "Tool Kits",
+    "category": "Maintenance",
+    "subcategory": "Tools",
+    "unit_of_measure": "set",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 150.0,
+    "replacement_cycle_months": 120,
+    "use_cases": [
+      "Repairs"
+    ]
+  },
+  {
+    "gm_item": "Screwdrivers",
+    "category": "Maintenance",
+    "subcategory": "Tools",
+    "unit_of_measure": "set",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 45.0,
+    "replacement_cycle_months": 60,
+    "use_cases": [
+      "Repairs"
+    ]
+  },
+  {
+    "gm_item": "Wrenches",
+    "category": "Maintenance",
+    "subcategory": "Tools",
+    "unit_of_measure": "set",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 65.0,
+    "replacement_cycle_months": 60,
+    "use_cases": [
+      "Repairs"
+    ]
+  },
+  {
+    "gm_item": "Hammers",
+    "category": "Maintenance",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 25.0,
+    "replacement_cycle_months": 120,
+    "use_cases": [
+      "Repairs"
+    ]
+  },
+  {
+    "gm_item": "Pliers",
+    "category": "Maintenance",
+    "subcategory": "Tools",
+    "unit_of_measure": "set",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 35.0,
+    "replacement_cycle_months": 60,
+    "use_cases": [
+      "Repairs"
+    ]
+  },
+  {
+    "gm_item": "Power Drill",
+    "category": "Maintenance",
+    "subcategory": "Power Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 150.0,
+    "replacement_cycle_months": 120,
+    "use_cases": [
+      "Repairs"
+    ]
+  },
+  {
+    "gm_item": "Drill Bits",
+    "category": "Maintenance",
+    "subcategory": "Tools",
+    "unit_of_measure": "set",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 30.0,
+    "replacement_cycle_months": 24,
+    "use_cases": [
+      "Repairs"
+    ]
+  },
+  {
+    "gm_item": "Light Bulbs",
+    "category": "Maintenance",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 45.0,
+    "replacement_cycle_months": 6,
+    "use_cases": [
+      "Lighting"
+    ]
+  },
+  {
+    "gm_item": "Utility Knives",
+    "category": "Maintenance",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 15.0,
+    "replacement_cycle_months": 12,
+    "use_cases": [
+      "Cutting"
+    ]
+  },
+  {
+    "gm_item": "Flashlights",
+    "category": "Maintenance",
+    "subcategory": "Equipment",
+    "unit_of_measure": "ea",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 25.0,
+    "replacement_cycle_months": 24,
+    "use_cases": [
+      "Maintenance"
+    ]
+  },
+  {
+    "gm_item": "Batteries",
+    "category": "Maintenance",
+    "subcategory": "Supplies",
+    "unit_of_measure": "pack",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 12.0,
+    "replacement_cycle_months": 3,
+    "use_cases": [
+      "Power"
+    ]
+  },
+  {
+    "gm_item": "Extension Cords",
+    "category": "Maintenance",
+    "subcategory": "Equipment",
+    "unit_of_measure": "ea",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 35.0,
+    "replacement_cycle_months": 60,
+    "use_cases": [
+      "Power"
+    ]
+  },
+  {
+    "gm_item": "Work Gloves",
+    "category": "Maintenance",
+    "subcategory": "Safety",
+    "unit_of_measure": "pair",
+    "vendor_type": "Safety Supply",
+    "estimated_cost": 18.0,
+    "replacement_cycle_months": 6,
+    "use_cases": [
+      "Safety"
+    ]
+  },
+  {
+    "gm_item": "Scrapers",
+    "category": "Maintenance",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Hardware Store",
+    "estimated_cost": 12.0,
+    "replacement_cycle_months": 12,
+    "use_cases": [
+      "Cleaning"
+    ]
+  },
+  {
+    "gm_item": "Drain Snakes",
+    "category": "Maintenance",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Plumbing Supply",
+    "estimated_cost": 45.0,
+    "replacement_cycle_months": 60,
+    "use_cases": [
+      "Plumbing"
+    ]
+  },
+  {
+    "gm_item": "HVAC Filters",
+    "category": "Maintenance",
+    "subcategory": "Supplies",
+    "unit_of_measure": "ea",
+    "vendor_type": "HVAC Supply",
+    "estimated_cost": 35.0,
+    "replacement_cycle_months": 3,
+    "use_cases": [
+      "HVAC"
+    ]
+  },
+  {
+    "gm_item": "Fryer Filters",
+    "category": "Kitchen",
+    "subcategory": "Supplies",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 25.0,
+    "replacement_cycle_months": 1,
+    "use_cases": [
+      "Fryer maintenance"
+    ]
+  },
+  {
+    "gm_item": "Squeeze Bottles",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 8.0,
+    "replacement_cycle_months": 12,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Cutting Boards",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 45.0,
+    "replacement_cycle_months": 24,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Chef Knives",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 150.0,
+    "replacement_cycle_months": 36,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Butcher Paper",
+    "category": "Kitchen",
+    "subcategory": "Supplies",
+    "unit_of_measure": "roll",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 25.0,
+    "replacement_cycle_months": 3,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Measuring Cups",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "set",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 25.0,
+    "replacement_cycle_months": 24,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Measuring Spoons",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "set",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 8.0,
+    "replacement_cycle_months": 24,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Kitchen Timers",
+    "category": "Kitchen",
+    "subcategory": "Equipment",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 15.0,
+    "replacement_cycle_months": 36,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Thermometers",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 35.0,
+    "replacement_cycle_months": 12,
+    "use_cases": [
+      "Food safety"
+    ]
+  },
+  {
+    "gm_item": "Scale Digital",
+    "category": "Kitchen",
+    "subcategory": "Equipment",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 85.0,
+    "replacement_cycle_months": 60,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Whisks",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 12.0,
+    "replacement_cycle_months": 12,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Spatulas",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 10.0,
+    "replacement_cycle_months": 12,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Tongs",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 15.0,
+    "replacement_cycle_months": 12,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Ladles",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 12.0,
+    "replacement_cycle_months": 24,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Strainers",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 18.0,
+    "replacement_cycle_months": 24,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Colanders",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 25.0,
+    "replacement_cycle_months": 36,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Sheet Pans",
+    "category": "Kitchen",
+    "subcategory": "Equipment",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 35.0,
+    "replacement_cycle_months": 24,
+    "use_cases": [
+      "Baking"
+    ]
+  },
+  {
+    "gm_item": "Mixing Bowls",
+    "category": "Kitchen",
+    "subcategory": "Equipment",
+    "unit_of_measure": "set",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 65.0,
+    "replacement_cycle_months": 60,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Storage Containers",
+    "category": "Kitchen",
+    "subcategory": "Equipment",
+    "unit_of_measure": "set",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 85.0,
+    "replacement_cycle_months": 36,
+    "use_cases": [
+      "Storage"
+    ]
+  },
+  {
+    "gm_item": "Can Openers",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 25.0,
+    "replacement_cycle_months": 24,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Peelers",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 8.0,
+    "replacement_cycle_months": 12,
+    "use_cases": [
+      "Food prep"
+    ]
+  },
+  {
+    "gm_item": "Zesters",
+    "category": "Kitchen",
+    "subcategory": "Tools",
+    "unit_of_measure": "ea",
+    "vendor_type": "Kitchen Supply",
+    "estimated_cost": 12.0,
+    "replacement_cycle_months": 24,
+    "use_cases": [
+      "Food prep"
+    ]
+  }
+]

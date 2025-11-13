@@ -1,0 +1,322 @@
+RESTAURANT INVENTORY - 300 ITEMS
+
+PRODUCE (70 items)
+1. Romaine Lettuce Heads
+2. Iceberg Lettuce Heads
+3. Spring Mix Lettuce
+4. Baby Spinach
+5. Kale Bunches
+6. Green Cabbage
+7. Red Cabbage
+8. Yellow Onions
+9. Red Onions
+10. Green Onions
+11. Shallots
+12. Garlic Bulbs
+13. Russet Potatoes
+14. Yukon Gold Potatoes
+15. Sweet Potatoes
+16. Red Potatoes
+17. Carrots Whole
+18. Carrot Coins Precut
+19. Celery Stalks
+20. White Button Mushrooms
+21. Cremini Mushrooms
+22. Portobello Caps
+23. Cherry Tomatoes
+24. Roma Tomatoes
+25. Beefsteak Tomatoes
+26. Cucumber Slicing
+27. English Cucumbers
+28. Green Bell Peppers
+29. Red Bell Peppers
+30. Yellow Bell Peppers
+31. Poblano Peppers
+32. Jalapeño Peppers
+33. Serrano Peppers
+34. Habanero Peppers
+35. Zucchini
+36. Yellow Squash
+37. Asparagus
+38. Green Beans
+39. Broccoli Crowns
+40. Cauliflower Florets
+41. Brussels Sprouts
+42. Sugar Snap Peas
+43. Snow Peas
+44. Avocados
+45. Lemons
+46. Limes
+47. Navel Oranges
+48. Grapefruits
+49. Pineapple Whole
+50. Watermelon
+51. Cantaloupe
+52. Honeydew Melon
+53. Red Grapes
+54. Green Grapes
+55. Strawberries
+56. Blueberries
+57. Blackberries
+58. Raspberries
+59. Bananas
+60. Fresh Basil Bunches
+61. Fresh Cilantro Bunches
+62. Fresh Parsley Italian
+63. Fresh Thyme
+64. Fresh Rosemary
+65. Fresh Mint
+66. Fresh Dill
+67. Ginger Root
+68. Leeks
+69. Radishes Bunched
+70. Mixed Baby Greens
+
+MEATS (70 items)
+1. Beef Tenderloin Whole
+2. Beef Ribeye Steaks
+3. Beef Striploin Steaks
+4. Beef Sirloin Steaks
+5. Beef Short Ribs
+6. Beef Chuck Roast
+7. Ground Beef 80-20
+8. Ground Beef 90-10
+9. Beef Brisket Flats
+10. Beef Oxtail
+11. Lamb Racks Frenched
+12. Lamb Loin Chops
+13. Lamb Shanks
+14. Pork Loin Roasts
+15. Pork Tenderloins
+16. Pork Shoulder Butts
+17. Pork Belly Slabs
+18. Pork Spare Ribs
+19. Pork Baby Back Ribs
+20. Ground Pork
+21. Bone-in Chicken Thighs
+22. Boneless Skinless Chicken Thighs
+23. Bone-in Chicken Breasts
+24. Boneless Skinless Chicken Breasts
+25. Chicken Wings Party Cut
+26. Whole Chickens
+27. Chicken Tenders
+28. Ground Chicken
+29. Turkey Breast Roasts
+30. Ground Turkey
+31. Duck Breasts
+32. Whole Ducks
+33. Italian Sausage Links Sweet
+34. Italian Sausage Links Hot
+35. Breakfast Sausage Patties
+36. Andouille Sausage
+37. Chorizo Sausage
+38. Smoked Sausage Ropes
+39. Bacon Slab
+40. Bacon Sliced Applewood
+41. Ham Whole Bone-in
+42. Ham Sliced Deli
+43. Prosciutto
+44. Salami Genoa
+45. Pastrami
+46. Roast Beef Deli
+47. Mortadella
+48. Pepperoni Slices
+49. Atlantic Salmon Fillets
+50. Steelhead Trout Fillets
+51. Halibut Fillets
+52. Cod Loins
+53. Mahi-Mahi Fillets
+54. Tilapia Fillets
+55. Sea Bass Fillets
+56. Tuna Steaks
+57. Shrimp 16-20 Peeled Deveined
+58. Shrimp 26-30 Peeled Deveined
+59. Bay Scallops
+60. Sea Scallops U10
+61. Calamari Rings
+62. Mussels Whole Shell-on
+63. Clams Littleneck
+64. Crab Meat Lump
+65. Crab Clusters Snow
+66. Lobster Tails
+67. Ground Bison
+68. Veal Cutlets
+69. Veal Bones For Stock
+70. Chicken Livers
+
+DRY STORAGE (70 items)
+1. All-Purpose Flour 50 lb
+2. Bread Flour 50 lb
+3. Cake Flour 25 lb
+4. Semolina Flour
+5. Granulated Sugar 50 lb
+6. Brown Sugar Light
+7. Brown Sugar Dark
+8. Confectioners Sugar
+9. Cornmeal Fine
+10. Panko Breadcrumbs
+11. Plain Breadcrumbs
+12. Cornstarch
+13. Baking Powder
+14. Baking Soda
+15. Active Dry Yeast
+16. Instant Yeast
+17. Long Grain Rice
+18. Jasmine Rice
+19. Basmati Rice
+20. Arborio Rice
+21. Quinoa White
+22. Quinoa Tricolor
+23. Wild Rice Blend
+24. Black Beans Dry
+25. Kidney Beans Dry
+26. Pinto Beans Dry
+27. Chickpeas Dry
+28. Lentils Green
+29. Lentils Red
+30. Black Lentils
+31. Pasta Penne
+32. Pasta Linguine
+33. Pasta Fettuccine
+34. Pasta Spaghetti
+35. Pasta Rigatoni
+36. Pasta Fusilli
+37. Pasta Orzo
+38. Pasta Lasagna Sheets
+39. Pasta Gnocchi
+40. Egg Noodles Wide
+41. Ramen Noodles
+42. Soba Noodles
+43. Tortillas Flour 10 inch
+44. Tortillas Corn 6 inch
+45. Pizza Dough Balls
+46. French Bread Loaves
+47. Hamburger Buns
+48. Hot Dog Buns
+49. Dinner Rolls
+50. Croutons Plain
+51. Crackers Saltine
+52. Oyster Crackers
+53. Olive Oil Extra Virgin
+54. Olive Oil Pure
+55. Vegetable Oil
+56. Canola Oil
+57. Sesame Oil
+58. Coconut Oil
+59. Butter Unsalted
+60. Butter Salted
+61. Heavy Cream
+62. Half and Half
+63. Whole Milk
+64. Buttermilk
+65. Sour Cream
+66. Cream Cheese
+67. Parmesan Cheese Grated
+68. Mozzarella Shredded
+69. Cheddar Cheese Shredded
+70. Swiss Cheese Sliced
+
+SPICES (40 items)
+1. Kosher Salt
+2. Sea Salt Fine
+3. Black Peppercorns Whole
+4. White Pepper Ground
+5. Garlic Powder
+6. Onion Powder
+7. Paprika Sweet
+8. Paprika Smoked
+9. Cayenne Pepper
+10. Crushed Red Pepper Flakes
+11. Chili Powder
+12. Cumin Ground
+13. Cumin Seeds Whole
+14. Coriander Ground
+15. Coriander Seeds Whole
+16. Turmeric Ground
+17. Curry Powder
+18. Garam Masala
+19. Cinnamon Ground
+20. Cinnamon Sticks
+21. Nutmeg Whole
+22. Allspice Ground
+23. Cloves Whole
+24. Cloves Ground
+25. Cardamom Pods
+26. Star Anise
+27. Fennel Seeds
+28. Caraway Seeds
+29. Mustard Seeds Yellow
+30. Mustard Seeds Brown
+31. Bay Leaves
+32. Oregano Dried
+33. Thyme Dried
+34. Rosemary Dried
+35. Basil Dried
+36. Sage Ground
+37. Marjoram Dried
+38. Tarragon Dried
+39. Old Bay Seasoning
+40. Cajun Seasoning Blend
+
+LIQUOR (25 items)
+1. Vodka Premium
+2. Vodka Well
+3. Gin London Dry
+4. Gin Premium
+5. Rum White
+6. Rum Dark
+7. Rum Spiced
+8. Tequila Blanco
+9. Tequila Reposado
+10. Tequila Añejo
+11. Whiskey Bourbon
+12. Whiskey Rye
+13. Whiskey Scotch
+14. Whiskey Irish
+15. Brandy Cognac
+16. Brandy Armagnac
+17. Liqueur Triple Sec
+18. Liqueur Amaretto
+19. Liqueur Kahlua
+20. Liqueur Baileys
+21. Liqueur Grand Marnier
+22. Liqueur Chambord
+23. Vermouth Dry
+24. Vermouth Sweet
+25. Bitters Aromatic
+
+WINE (25 items)
+1. Chardonnay White
+2. Sauvignon Blanc White
+3. Pinot Grigio White
+4. Riesling White
+5. Moscato White
+6. Pinot Noir Red
+7. Cabernet Sauvignon Red
+8. Merlot Red
+9. Malbec Red
+10. Syrah Red
+11. Zinfandel Red
+12. Sangiovese Red
+13. Tempranillo Red
+14. Grenache Red
+15. Barbera Red
+16. Champagne Brut
+17. Prosecco Sparkling
+18. Cava Sparkling
+19. Rosé Dry
+20. Rosé Sweet
+21. Port Ruby
+22. Port Tawny
+23. Sherry Dry
+24. Sherry Sweet
+25. Madeira Fortified
+
+TOTAL: 300 ITEMS
+- Produce: 70
+- Meats: 70
+- Dry Storage: 70
+- Spices: 40
+- Liquor: 25
+- Wine: 25
+

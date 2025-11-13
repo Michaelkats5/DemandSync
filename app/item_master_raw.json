@@ -1,0 +1,5051 @@
+[
+  {
+    "item_name": "Filet Mignon 8oz",
+    "category": "Meat",
+    "subcategory": "Beef - Steaks",
+    "unit_of_measure": "ea",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "US Foods",
+    "estimated_cost": 18.5,
+    "use_cases": [
+      "Steak entrees"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Filet Mignon 12oz",
+    "category": "Meat",
+    "subcategory": "Beef - Steaks",
+    "unit_of_measure": "ea",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "US Foods",
+    "estimated_cost": 26.0,
+    "use_cases": [
+      "Steak entrees"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Ribeye 16oz",
+    "category": "Meat",
+    "subcategory": "Beef - Steaks",
+    "unit_of_measure": "ea",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "US Foods",
+    "estimated_cost": 24.0,
+    "use_cases": [
+      "Steak entrees"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Ribeye 20oz",
+    "category": "Meat",
+    "subcategory": "Beef - Steaks",
+    "unit_of_measure": "ea",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "US Foods",
+    "estimated_cost": 30.0,
+    "use_cases": [
+      "Steak entrees"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "New York Strip 14oz",
+    "category": "Meat",
+    "subcategory": "Beef - Steaks",
+    "unit_of_measure": "ea",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "US Foods",
+    "estimated_cost": 22.0,
+    "use_cases": [
+      "Steak entrees"
+    ],
+    "yield_percent": 92,
+    "waste_percent": 8,
+    "allergens": []
+  },
+  {
+    "item_name": "Bone In Ribeye",
+    "category": "Meat",
+    "subcategory": "Beef - Steaks",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "US Foods",
+    "estimated_cost": 16.5,
+    "use_cases": [
+      "Steak entrees"
+    ],
+    "yield_percent": 75,
+    "waste_percent": 25,
+    "allergens": []
+  },
+  {
+    "item_name": "Wagyu Strip 6oz",
+    "category": "Meat",
+    "subcategory": "Beef - Steaks",
+    "unit_of_measure": "ea",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "Premium Vendor",
+    "estimated_cost": 45.0,
+    "use_cases": [
+      "Premium entrees"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Wagyu Ribeye",
+    "category": "Meat",
+    "subcategory": "Beef - Steaks",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "Premium Vendor",
+    "estimated_cost": 85.0,
+    "use_cases": [
+      "Premium entrees"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Ground Beef 80-20",
+    "category": "Meat",
+    "subcategory": "Beef - Steaks",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 2,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.5,
+    "use_cases": [
+      "Burgers",
+      "Meatballs"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Chicken Breast",
+    "category": "Meat",
+    "subcategory": "Poultry",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.25,
+    "use_cases": [
+      "Chicken entrees"
+    ],
+    "yield_percent": 80,
+    "waste_percent": 20,
+    "allergens": []
+  },
+  {
+    "item_name": "Chicken Thighs",
+    "category": "Meat",
+    "subcategory": "Poultry",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Chicken entrees"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Chicken Wings",
+    "category": "Meat",
+    "subcategory": "Poultry",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.75,
+    "use_cases": [
+      "Appetizers"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Pork Belly",
+    "category": "Meat",
+    "subcategory": "Pork",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.5,
+    "use_cases": [
+      "Appetizers",
+      "Entrees"
+    ],
+    "yield_percent": 70,
+    "waste_percent": 30,
+    "allergens": []
+  },
+  {
+    "item_name": "Bacon Slab",
+    "category": "Meat",
+    "subcategory": "Pork",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.75,
+    "use_cases": [
+      "Breakfast",
+      "Garnish"
+    ],
+    "yield_percent": 80,
+    "waste_percent": 20,
+    "allergens": []
+  },
+  {
+    "item_name": "Applewood Bacon",
+    "category": "Meat",
+    "subcategory": "Pork",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "US Foods",
+    "estimated_cost": 7.25,
+    "use_cases": [
+      "Breakfast",
+      "Garnish"
+    ],
+    "yield_percent": 80,
+    "waste_percent": 20,
+    "allergens": []
+  },
+  {
+    "item_name": "Italian Sausage",
+    "category": "Meat",
+    "subcategory": "Pork",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Pasta",
+      "Pizza"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Chorizo",
+    "category": "Meat",
+    "subcategory": "Pork",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.5,
+    "use_cases": [
+      "Breakfast",
+      "Tacos"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Salmon Fillet",
+    "category": "Seafood",
+    "subcategory": "Fish",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 2,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 14.0,
+    "use_cases": [
+      "Fish entrees"
+    ],
+    "yield_percent": 75,
+    "waste_percent": 25,
+    "allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "item_name": "Chilean Sea Bass",
+    "category": "Seafood",
+    "subcategory": "Fish",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 2,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 22.0,
+    "use_cases": [
+      "Fish entrees"
+    ],
+    "yield_percent": 70,
+    "waste_percent": 30,
+    "allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "item_name": "Atlantic Cod",
+    "category": "Seafood",
+    "subcategory": "Fish",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 2,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 10.5,
+    "use_cases": [
+      "Fish entrees"
+    ],
+    "yield_percent": 75,
+    "waste_percent": 25,
+    "allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "item_name": "Ahi Tuna",
+    "category": "Seafood",
+    "subcategory": "Fish",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 2,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Sushi",
+      "Tartare"
+    ],
+    "yield_percent": 80,
+    "waste_percent": 20,
+    "allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "item_name": "Shrimp 16-20",
+    "category": "Seafood",
+    "subcategory": "Shellfish",
+    "unit_of_measure": "lb",
+    "storage_type": "Frozen",
+    "shelf_life_days": 180,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 12.5,
+    "use_cases": [
+      "Appetizers",
+      "Pasta"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": [
+      "Shellfish"
+    ]
+  },
+  {
+    "item_name": "Shrimp 21-25",
+    "category": "Seafood",
+    "subcategory": "Shellfish",
+    "unit_of_measure": "lb",
+    "storage_type": "Frozen",
+    "shelf_life_days": 180,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 11.0,
+    "use_cases": [
+      "Appetizers",
+      "Pasta"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": [
+      "Shellfish"
+    ]
+  },
+  {
+    "item_name": "Lobster Tail",
+    "category": "Seafood",
+    "subcategory": "Shellfish",
+    "unit_of_measure": "ea",
+    "storage_type": "Frozen",
+    "shelf_life_days": 180,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Premium entrees"
+    ],
+    "yield_percent": 60,
+    "waste_percent": 40,
+    "allergens": [
+      "Shellfish"
+    ]
+  },
+  {
+    "item_name": "Crab Meat Jumbo Lump",
+    "category": "Seafood",
+    "subcategory": "Shellfish",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 28.0,
+    "use_cases": [
+      "Appetizers",
+      "Pasta"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Shellfish"
+    ]
+  },
+  {
+    "item_name": "King Crab Legs",
+    "category": "Seafood",
+    "subcategory": "Shellfish",
+    "unit_of_measure": "lb",
+    "storage_type": "Frozen",
+    "shelf_life_days": 180,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 35.0,
+    "use_cases": [
+      "Premium entrees"
+    ],
+    "yield_percent": 50,
+    "waste_percent": 50,
+    "allergens": [
+      "Shellfish"
+    ]
+  },
+  {
+    "item_name": "Scallops U10",
+    "category": "Seafood",
+    "subcategory": "Shellfish",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 2,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 24.0,
+    "use_cases": [
+      "Appetizers",
+      "Entrees"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": [
+      "Shellfish"
+    ]
+  },
+  {
+    "item_name": "Mussels",
+    "category": "Seafood",
+    "subcategory": "Shellfish",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 2,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 6.5,
+    "use_cases": [
+      "Appetizers",
+      "Pasta"
+    ],
+    "yield_percent": 40,
+    "waste_percent": 60,
+    "allergens": [
+      "Shellfish"
+    ]
+  },
+  {
+    "item_name": "Clams",
+    "category": "Seafood",
+    "subcategory": "Shellfish",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 2,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 7.0,
+    "use_cases": [
+      "Appetizers",
+      "Pasta"
+    ],
+    "yield_percent": 40,
+    "waste_percent": 60,
+    "allergens": [
+      "Shellfish"
+    ]
+  },
+  {
+    "item_name": "Calamari Tubes",
+    "category": "Seafood",
+    "subcategory": "Shellfish",
+    "unit_of_measure": "lb",
+    "storage_type": "Frozen",
+    "shelf_life_days": 180,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 8.5,
+    "use_cases": [
+      "Appetizers"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": [
+      "Shellfish"
+    ]
+  },
+  {
+    "item_name": "Octopus",
+    "category": "Seafood",
+    "subcategory": "Shellfish",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 2,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 15.0,
+    "use_cases": [
+      "Appetizers"
+    ],
+    "yield_percent": 70,
+    "waste_percent": 30,
+    "allergens": [
+      "Shellfish"
+    ]
+  },
+  {
+    "item_name": "Oysters",
+    "category": "Seafood",
+    "subcategory": "Shellfish",
+    "unit_of_measure": "dozen",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Raw bar"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": [
+      "Shellfish"
+    ]
+  },
+  {
+    "item_name": "Roma Tomatoes",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Sauces",
+      "Salads"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Heirloom Tomatoes",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Salads",
+      "Garnish"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Cherry Tomatoes",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "pint",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Salads",
+      "Garnish"
+    ],
+    "yield_percent": 98,
+    "waste_percent": 2,
+    "allergens": []
+  },
+  {
+    "item_name": "Iceberg Lettuce",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "head",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.75,
+    "use_cases": [
+      "Salads",
+      "Burgers"
+    ],
+    "yield_percent": 80,
+    "waste_percent": 20,
+    "allergens": []
+  },
+  {
+    "item_name": "Romaine Hearts",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "case",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Caesar salad"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Spring Mix",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 6.5,
+    "use_cases": [
+      "Salads"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Spinach",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Salads",
+      "Sides"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Arugula",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Salads",
+      "Garnish"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Kale",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "bunch",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Salads",
+      "Sides"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Carrots",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 14,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.25,
+    "use_cases": [
+      "Sides",
+      "Prep"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Celery",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "bunch",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 10,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.0,
+    "use_cases": [
+      "Prep",
+      "Sides"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Cucumbers",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.5,
+    "use_cases": [
+      "Salads"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Red Onions",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 30,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.75,
+    "use_cases": [
+      "Prep",
+      "Garnish"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Yellow Onions",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 30,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.25,
+    "use_cases": [
+      "Prep",
+      "Cooking"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "White Onions",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 30,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.5,
+    "use_cases": [
+      "Prep",
+      "Cooking"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Shallots",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 30,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Prep",
+      "Garnish"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Garlic Peeled",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 14,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Prep",
+      "Cooking"
+    ],
+    "yield_percent": 98,
+    "waste_percent": 2,
+    "allergens": []
+  },
+  {
+    "item_name": "Ginger",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 21,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Prep",
+      "Cooking"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Jalapenos",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Prep",
+      "Garnish"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Serrano Peppers",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Prep",
+      "Garnish"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Bell Peppers Red",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 3.0,
+    "use_cases": [
+      "Prep",
+      "Garnish"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Bell Peppers Green",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Prep",
+      "Garnish"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Bell Peppers Yellow",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 3.25,
+    "use_cases": [
+      "Prep",
+      "Garnish"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Mushrooms Button",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Sides",
+      "Prep"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Mushrooms Shiitake",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Sides",
+      "Prep"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Mushrooms Portobello",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 6.5,
+    "use_cases": [
+      "Entrees"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Mushrooms Cremini",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 5.5,
+    "use_cases": [
+      "Sides",
+      "Prep"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Potatoes Russet",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 30,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.0,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Potatoes Yukon Gold",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 30,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.25,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Sweet Potatoes",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 30,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.5,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Asparagus",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Broccolini",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Cauliflower",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "head",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 80,
+    "waste_percent": 20,
+    "allergens": []
+  },
+  {
+    "item_name": "Zucchini",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.0,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Squash Yellow",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.25,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Corn on the Cob",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "ea",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 0.75,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 80,
+    "waste_percent": 20,
+    "allergens": []
+  },
+  {
+    "item_name": "Green Beans",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 3.0,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Brussels Sprouts",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Avocados",
+    "category": "Produce",
+    "subcategory": "Vegetables",
+    "unit_of_measure": "ea",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.5,
+    "use_cases": [
+      "Garnish",
+      "Salads"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Lemons",
+    "category": "Produce",
+    "subcategory": "Fruits",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 14,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Garnish",
+      "Prep"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Limes",
+    "category": "Produce",
+    "subcategory": "Fruits",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 14,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.75,
+    "use_cases": [
+      "Garnish",
+      "Prep"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Oranges",
+    "category": "Produce",
+    "subcategory": "Fruits",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 14,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.0,
+    "use_cases": [
+      "Garnish",
+      "Juice"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Grapefruits",
+    "category": "Produce",
+    "subcategory": "Fruits",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 14,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.25,
+    "use_cases": [
+      "Garnish",
+      "Juice"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Pineapple",
+    "category": "Produce",
+    "subcategory": "Fruits",
+    "unit_of_measure": "ea",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Garnish",
+      "Juice"
+    ],
+    "yield_percent": 60,
+    "waste_percent": 40,
+    "allergens": []
+  },
+  {
+    "item_name": "Strawberries",
+    "category": "Produce",
+    "subcategory": "Fruits",
+    "unit_of_measure": "pint",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Desserts",
+      "Garnish"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Blueberries",
+    "category": "Produce",
+    "subcategory": "Fruits",
+    "unit_of_measure": "pint",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Desserts",
+      "Garnish"
+    ],
+    "yield_percent": 98,
+    "waste_percent": 2,
+    "allergens": []
+  },
+  {
+    "item_name": "Raspberries",
+    "category": "Produce",
+    "subcategory": "Fruits",
+    "unit_of_measure": "pint",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 6.0,
+    "use_cases": [
+      "Desserts",
+      "Garnish"
+    ],
+    "yield_percent": 95,
+    "waste_percent": 5,
+    "allergens": []
+  },
+  {
+    "item_name": "Apples",
+    "category": "Produce",
+    "subcategory": "Fruits",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 21,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.75,
+    "use_cases": [
+      "Desserts"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Pears",
+    "category": "Produce",
+    "subcategory": "Fruits",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Desserts"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Bananas",
+    "category": "Produce",
+    "subcategory": "Fruits",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 0.75,
+    "use_cases": [
+      "Desserts"
+    ],
+    "yield_percent": 80,
+    "waste_percent": 20,
+    "allergens": []
+  },
+  {
+    "item_name": "Parsley",
+    "category": "Produce",
+    "subcategory": "Herbs",
+    "unit_of_measure": "bunch",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.5,
+    "use_cases": [
+      "Garnish",
+      "Prep"
+    ],
+    "yield_percent": 80,
+    "waste_percent": 20,
+    "allergens": []
+  },
+  {
+    "item_name": "Cilantro",
+    "category": "Produce",
+    "subcategory": "Herbs",
+    "unit_of_measure": "bunch",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 1.75,
+    "use_cases": [
+      "Garnish",
+      "Prep"
+    ],
+    "yield_percent": 80,
+    "waste_percent": 20,
+    "allergens": []
+  },
+  {
+    "item_name": "Basil",
+    "category": "Produce",
+    "subcategory": "Herbs",
+    "unit_of_measure": "bunch",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 3.0,
+    "use_cases": [
+      "Garnish",
+      "Prep"
+    ],
+    "yield_percent": 75,
+    "waste_percent": 25,
+    "allergens": []
+  },
+  {
+    "item_name": "Thyme",
+    "category": "Produce",
+    "subcategory": "Herbs",
+    "unit_of_measure": "bunch",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Rosemary",
+    "category": "Produce",
+    "subcategory": "Herbs",
+    "unit_of_measure": "bunch",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.75,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Oregano",
+    "category": "Produce",
+    "subcategory": "Herbs",
+    "unit_of_measure": "bunch",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.25,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 90,
+    "waste_percent": 10,
+    "allergens": []
+  },
+  {
+    "item_name": "Bay Leaves",
+    "category": "Produce",
+    "subcategory": "Herbs",
+    "unit_of_measure": "oz",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spice Vendor",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Chives",
+    "category": "Produce",
+    "subcategory": "Herbs",
+    "unit_of_measure": "bunch",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.0,
+    "use_cases": [
+      "Garnish"
+    ],
+    "yield_percent": 85,
+    "waste_percent": 15,
+    "allergens": []
+  },
+  {
+    "item_name": "Dill",
+    "category": "Produce",
+    "subcategory": "Herbs",
+    "unit_of_measure": "bunch",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Garnish",
+      "Prep"
+    ],
+    "yield_percent": 80,
+    "waste_percent": 20,
+    "allergens": []
+  },
+  {
+    "item_name": "Mint",
+    "category": "Produce",
+    "subcategory": "Herbs",
+    "unit_of_measure": "bunch",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 5,
+    "vendor_type": "Produce Vendor",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Garnish",
+      "Cocktails"
+    ],
+    "yield_percent": 75,
+    "waste_percent": 25,
+    "allergens": []
+  },
+  {
+    "item_name": "Butter",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 30,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Cooking",
+      "Baking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Heavy Cream",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "qt",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 14,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.5,
+    "use_cases": [
+      "Sauces",
+      "Desserts"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Half and Half",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "qt",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 14,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Coffee"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Whole Milk",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "gal",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Cooking",
+      "Baking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Parmesan Cheese",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 30,
+    "vendor_type": "US Foods",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Pasta",
+      "Salads"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Cheddar Cheese",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 21,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.5,
+    "use_cases": [
+      "Burgers",
+      "Appetizers"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "American Cheese",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 30,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Burgers"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Provolone Cheese",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 21,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.0,
+    "use_cases": [
+      "Sandwiches"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Swiss Cheese",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 21,
+    "vendor_type": "US Foods",
+    "estimated_cost": 7.0,
+    "use_cases": [
+      "Sandwiches"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Blue Cheese Crumbles",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 30,
+    "vendor_type": "US Foods",
+    "estimated_cost": 10.0,
+    "use_cases": [
+      "Salads",
+      "Appetizers"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Cream Cheese",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 30,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.75,
+    "use_cases": [
+      "Appetizers",
+      "Desserts"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Gruyere Cheese",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 21,
+    "vendor_type": "US Foods",
+    "estimated_cost": 11.0,
+    "use_cases": [
+      "Appetizers"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Goat Cheese",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 14,
+    "vendor_type": "US Foods",
+    "estimated_cost": 9.0,
+    "use_cases": [
+      "Salads",
+      "Appetizers"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Feta Cheese",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 30,
+    "vendor_type": "US Foods",
+    "estimated_cost": 7.5,
+    "use_cases": [
+      "Salads"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Mozzarella",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Pizza",
+      "Appetizers"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Eggs Large",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "dozen",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 30,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Breakfast",
+      "Baking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Eggs"
+    ]
+  },
+  {
+    "item_name": "Egg Whites",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "qt",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.0,
+    "use_cases": [
+      "Breakfast"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Eggs"
+    ]
+  },
+  {
+    "item_name": "Sour Cream",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 21,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Garnish",
+      "Sides"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Greek Yogurt",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "lb",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 14,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Breakfast",
+      "Sides"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Mayonnaise",
+    "category": "Dairy",
+    "subcategory": "Cheese & Eggs",
+    "unit_of_measure": "gal",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 90,
+    "vendor_type": "US Foods",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Sandwiches",
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Eggs"
+    ]
+  },
+  {
+    "item_name": "Dijon Mustard",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 180,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Prep",
+      "Sandwiches"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Yellow Mustard",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Sandwiches"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Ketchup",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.0,
+    "use_cases": [
+      "Burgers",
+      "Fries"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "BBQ Sauce",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Ribs",
+      "Chicken"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Ranch",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 90,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Salads",
+      "Wings"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy",
+      "Eggs"
+    ]
+  },
+  {
+    "item_name": "Caesar Dressing",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 60,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.5,
+    "use_cases": [
+      "Salads"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Eggs",
+      "Fish"
+    ]
+  },
+  {
+    "item_name": "Blue Cheese Dressing",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 60,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.0,
+    "use_cases": [
+      "Salads",
+      "Wings"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Balsamic Vinaigrette",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 180,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.5,
+    "use_cases": [
+      "Salads"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Red Wine Vinegar",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Balsamic Glaze",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Garnish"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Soy Sauce",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Soy"
+    ]
+  },
+  {
+    "item_name": "Worcestershire Sauce",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "item_name": "Teriyaki Sauce",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Soy"
+    ]
+  },
+  {
+    "item_name": "Buffalo Sauce",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Wings"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Sriracha",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.75,
+    "use_cases": [
+      "Garnish"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Chili Oil",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.0,
+    "use_cases": [
+      "Garnish"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Sesame Oil",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 8.5,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Sesame"
+    ]
+  },
+  {
+    "item_name": "Olive Oil Extra Virgin",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Prep",
+      "Cooking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Vegetable Oil",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "gal",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Cooking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Canola Oil",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "gal",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 7.5,
+    "use_cases": [
+      "Cooking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Truffle Oil",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 180,
+    "vendor_type": "Premium Vendor",
+    "estimated_cost": 25.0,
+    "use_cases": [
+      "Garnish"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Alfredo Sauce",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "jar",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 30,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.5,
+    "use_cases": [
+      "Pasta"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Marinara Sauce",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "jar",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Pasta",
+      "Pizza"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Demi Glace",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "qt",
+    "storage_type": "Frozen",
+    "shelf_life_days": 180,
+    "vendor_type": "US Foods",
+    "estimated_cost": 15.0,
+    "use_cases": [
+      "Sauces"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Beef Stock",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "qt",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Soups",
+      "Sauces"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Chicken Stock",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "qt",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Soups",
+      "Sauces"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Fish Stock",
+    "category": "Pantry",
+    "subcategory": "Sauces & Condiments",
+    "unit_of_measure": "qt",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 3,
+    "vendor_type": "Seafood Vendor",
+    "estimated_cost": 6.0,
+    "use_cases": [
+      "Soups",
+      "Sauces"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "item_name": "Salt Kosher",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 2.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Pepper Black",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "White Pepper",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 10.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Paprika",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Smoked Paprika",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 15.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Cajun Seasoning",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 10.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Old Bay Seasoning",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 11.0,
+    "use_cases": [
+      "Seafood"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Garlic Powder",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 8.5,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Onion Powder",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 7.5,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Cumin",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 14.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Coriander",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 16.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Cinnamon",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Desserts"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Nutmeg",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 25.0,
+    "use_cases": [
+      "Desserts"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Cloves",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 22.0,
+    "use_cases": [
+      "Desserts"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Red Chili Flakes",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Curry Powder",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 13.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Turmeric",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 20.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Steak Seasoning House Blend",
+    "category": "Pantry",
+    "subcategory": "Spices & Seasonings",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 11.5,
+    "use_cases": [
+      "Steaks"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Flour AP",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 0.75,
+    "use_cases": [
+      "Baking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Bread Flour",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 0.85,
+    "use_cases": [
+      "Baking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Corn Starch",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Thickening"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Baking Soda",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 1.5,
+    "use_cases": [
+      "Baking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Baking Powder",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.0,
+    "use_cases": [
+      "Baking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Brown Sugar",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 1.25,
+    "use_cases": [
+      "Baking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Granulated Sugar",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 1.0,
+    "use_cases": [
+      "Baking",
+      "Beverages"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Powdered Sugar",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 1.5,
+    "use_cases": [
+      "Baking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Chocolate Chips",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.0,
+    "use_cases": [
+      "Desserts"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Cocoa Powder",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Desserts"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Honey",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.5,
+    "use_cases": [
+      "Baking",
+      "Garnish"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Maple Syrup",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Breakfast"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Pancake Mix",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Breakfast"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Bread Crumbs Panko",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Tortilla Chips",
+    "category": "Pantry",
+    "subcategory": "Baking & Grains",
+    "unit_of_measure": "bag",
+    "storage_type": "Dry",
+    "shelf_life_days": 90,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Appetizers"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Corn"
+    ]
+  },
+  {
+    "item_name": "Burger Buns",
+    "category": "Bakery",
+    "subcategory": "Bread",
+    "unit_of_measure": "dozen",
+    "storage_type": "Dry",
+    "shelf_life_days": 5,
+    "vendor_type": "Bakery Vendor",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Burgers"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Brioche Buns",
+    "category": "Bakery",
+    "subcategory": "Bread",
+    "unit_of_measure": "dozen",
+    "storage_type": "Dry",
+    "shelf_life_days": 5,
+    "vendor_type": "Bakery Vendor",
+    "estimated_cost": 6.0,
+    "use_cases": [
+      "Premium burgers"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten",
+      "Eggs"
+    ]
+  },
+  {
+    "item_name": "Slider Buns",
+    "category": "Bakery",
+    "subcategory": "Bread",
+    "unit_of_measure": "dozen",
+    "storage_type": "Dry",
+    "shelf_life_days": 5,
+    "vendor_type": "Bakery Vendor",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Sliders"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Hot Dog Buns",
+    "category": "Bakery",
+    "subcategory": "Bread",
+    "unit_of_measure": "dozen",
+    "storage_type": "Dry",
+    "shelf_life_days": 5,
+    "vendor_type": "Bakery Vendor",
+    "estimated_cost": 3.75,
+    "use_cases": [
+      "Hot dogs"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "French Bread Loaf",
+    "category": "Bakery",
+    "subcategory": "Bread",
+    "unit_of_measure": "ea",
+    "storage_type": "Dry",
+    "shelf_life_days": 3,
+    "vendor_type": "Bakery Vendor",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Table bread"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Brioche Loaf",
+    "category": "Bakery",
+    "subcategory": "Bread",
+    "unit_of_measure": "ea",
+    "storage_type": "Dry",
+    "shelf_life_days": 3,
+    "vendor_type": "Bakery Vendor",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Table bread"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten",
+      "Eggs"
+    ]
+  },
+  {
+    "item_name": "Croissants",
+    "category": "Bakery",
+    "subcategory": "Bread",
+    "unit_of_measure": "dozen",
+    "storage_type": "Dry",
+    "shelf_life_days": 3,
+    "vendor_type": "Bakery Vendor",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Breakfast"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten",
+      "Eggs",
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Dinner Rolls",
+    "category": "Bakery",
+    "subcategory": "Bread",
+    "unit_of_measure": "dozen",
+    "storage_type": "Dry",
+    "shelf_life_days": 3,
+    "vendor_type": "Bakery Vendor",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Table bread"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Croutons",
+    "category": "Bakery",
+    "subcategory": "Bread",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 90,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.5,
+    "use_cases": [
+      "Salads"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Burger Pickles",
+    "category": "Pantry",
+    "subcategory": "Pickles & Garnishes",
+    "unit_of_measure": "jar",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 90,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Burgers"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Sweet Pickles",
+    "category": "Pantry",
+    "subcategory": "Pickles & Garnishes",
+    "unit_of_measure": "jar",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 90,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Garnish"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Relish",
+    "category": "Pantry",
+    "subcategory": "Pickles & Garnishes",
+    "unit_of_measure": "jar",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 90,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Hot dogs"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Bar Olives",
+    "category": "Pantry",
+    "subcategory": "Pickles & Garnishes",
+    "unit_of_measure": "jar",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 180,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Capers",
+    "category": "Pantry",
+    "subcategory": "Pickles & Garnishes",
+    "unit_of_measure": "jar",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Pickled Onions",
+    "category": "Pantry",
+    "subcategory": "Pickles & Garnishes",
+    "unit_of_measure": "jar",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 30,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.5,
+    "use_cases": [
+      "Garnish"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Pickled Jalape\u00f1os",
+    "category": "Pantry",
+    "subcategory": "Pickles & Garnishes",
+    "unit_of_measure": "jar",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 90,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.75,
+    "use_cases": [
+      "Garnish"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Rice Long Grain",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 1.5,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Jasmine Rice",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 2.0,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Risotto Arborio",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Pasta Penne",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Pasta"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Pasta Linguine",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Pasta"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Pasta Fettuccine",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Pasta"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Couscous",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Quinoa",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "French Fries",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Frozen",
+    "shelf_life_days": 180,
+    "vendor_type": "US Foods",
+    "estimated_cost": 1.75,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Sweet Potato Fries",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Frozen",
+    "shelf_life_days": 180,
+    "vendor_type": "US Foods",
+    "estimated_cost": 2.5,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Mashed Potato Puree",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Frozen",
+    "shelf_life_days": 180,
+    "vendor_type": "US Foods",
+    "estimated_cost": 2.25,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Potato Gratin Mix",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Frozen",
+    "shelf_life_days": 180,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.0,
+    "use_cases": [
+      "Sides"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "item_name": "Pizza Dough",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Frozen",
+    "shelf_life_days": 90,
+    "vendor_type": "Bakery Vendor",
+    "estimated_cost": 2.0,
+    "use_cases": [
+      "Pizza"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Flatbread Dough",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "lb",
+    "storage_type": "Frozen",
+    "shelf_life_days": 90,
+    "vendor_type": "Bakery Vendor",
+    "estimated_cost": 2.25,
+    "use_cases": [
+      "Appetizers"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Tortillas Flour",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "dozen",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 14,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Tacos"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Wheat",
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Tortillas Corn",
+    "category": "Pantry",
+    "subcategory": "Grains & Pasta",
+    "unit_of_measure": "dozen",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 14,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.0,
+    "use_cases": [
+      "Tacos"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Corn"
+    ]
+  },
+  {
+    "item_name": "Espresso Coffee Beans",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 90,
+    "vendor_type": "Coffee Vendor",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Coffee"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Ground Coffee",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 90,
+    "vendor_type": "Coffee Vendor",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Coffee"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Tea Bags Black",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Tea"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Iced Tea Mix",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.5,
+    "use_cases": [
+      "Iced tea"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Lemonade Mix",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "lb",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 3.5,
+    "use_cases": [
+      "Lemonade"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Coke",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Beverage Vendor",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Beverages"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Diet Coke",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Beverage Vendor",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Beverages"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Sprite",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Beverage Vendor",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Beverages"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Ginger Ale",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Beverage Vendor",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Beverages"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Tonic Water",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Beverage Vendor",
+    "estimated_cost": 20.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Club Soda",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Beverage Vendor",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Orange Juice",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "gal",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.0,
+    "use_cases": [
+      "Breakfast",
+      "Juice"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Pineapple Juice",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "gal",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "US Foods",
+    "estimated_cost": 7.0,
+    "use_cases": [
+      "Juice",
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Cranberry Juice",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "gal",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.5,
+    "use_cases": [
+      "Juice",
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Grapefruit Juice",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "gal",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.25,
+    "use_cases": [
+      "Juice",
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Apple Juice",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "gal",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 7,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.5,
+    "use_cases": [
+      "Juice"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Simple Syrup",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Grenadine",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Agave Syrup",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Aromatic Bitters",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Bar Supply",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Orange Bitters",
+    "category": "Beverages",
+    "subcategory": "Non-Alcoholic",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Bar Supply",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Vodka Grey Goose",
+    "category": "Liquor",
+    "subcategory": "Vodka",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 45.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Vodka Tito's",
+    "category": "Liquor",
+    "subcategory": "Vodka",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 28.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Vodka Ketel One",
+    "category": "Liquor",
+    "subcategory": "Vodka",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 42.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Well Vodka",
+    "category": "Liquor",
+    "subcategory": "Vodka",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Gin Bombay Sapphire",
+    "category": "Liquor",
+    "subcategory": "Gin",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 38.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Gin Tanqueray",
+    "category": "Liquor",
+    "subcategory": "Gin",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 35.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Gin Hendrick's",
+    "category": "Liquor",
+    "subcategory": "Gin",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 48.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Tequila Don Julio Blanco",
+    "category": "Liquor",
+    "subcategory": "Tequila",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 52.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Tequila Patron Silver",
+    "category": "Liquor",
+    "subcategory": "Tequila",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 48.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Tequila Casamigos Reposado",
+    "category": "Liquor",
+    "subcategory": "Tequila",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 55.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Rum Bacardi",
+    "category": "Liquor",
+    "subcategory": "Rum",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 22.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Rum Captain Morgan",
+    "category": "Liquor",
+    "subcategory": "Rum",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 25.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Whiskey Jack Daniel's",
+    "category": "Liquor",
+    "subcategory": "Whiskey & Bourbon",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 32.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Bourbon Maker's Mark",
+    "category": "Liquor",
+    "subcategory": "Whiskey & Bourbon",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 35.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Bourbon Woodford Reserve",
+    "category": "Liquor",
+    "subcategory": "Whiskey & Bourbon",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 42.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Bulleit Bourbon",
+    "category": "Liquor",
+    "subcategory": "Whiskey & Bourbon",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 32.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Scotch Johnnie Walker Black",
+    "category": "Liquor",
+    "subcategory": "Whiskey & Bourbon",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Spec's",
+    "estimated_cost": 65.0,
+    "use_cases": [
+      "Cocktails"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Red Wine Cabernet",
+    "category": "Wine",
+    "subcategory": "Red Wine",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 1095,
+    "vendor_type": "Wine Vendor",
+    "estimated_cost": 25.0,
+    "use_cases": [
+      "Wine service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Red Wine Pinot Noir",
+    "category": "Wine",
+    "subcategory": "Red Wine",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 1095,
+    "vendor_type": "Wine Vendor",
+    "estimated_cost": 28.0,
+    "use_cases": [
+      "Wine service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Red Wine Merlot",
+    "category": "Wine",
+    "subcategory": "Red Wine",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 1095,
+    "vendor_type": "Wine Vendor",
+    "estimated_cost": 22.0,
+    "use_cases": [
+      "Wine service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Red Wine Malbec",
+    "category": "Wine",
+    "subcategory": "Red Wine",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 1095,
+    "vendor_type": "Wine Vendor",
+    "estimated_cost": 24.0,
+    "use_cases": [
+      "Wine service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "White Wine Chardonnay",
+    "category": "Wine",
+    "subcategory": "White Wine",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 1095,
+    "vendor_type": "Wine Vendor",
+    "estimated_cost": 24.0,
+    "use_cases": [
+      "Wine service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "White Wine Sauvignon Blanc",
+    "category": "Wine",
+    "subcategory": "White Wine",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 1095,
+    "vendor_type": "Wine Vendor",
+    "estimated_cost": 22.0,
+    "use_cases": [
+      "Wine service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "White Wine Pinot Grigio",
+    "category": "Wine",
+    "subcategory": "White Wine",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 1095,
+    "vendor_type": "Wine Vendor",
+    "estimated_cost": 20.0,
+    "use_cases": [
+      "Wine service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Champagne Brut",
+    "category": "Wine",
+    "subcategory": "Sparkling Wine",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 1095,
+    "vendor_type": "Wine Vendor",
+    "estimated_cost": 45.0,
+    "use_cases": [
+      "Wine service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Prosecco",
+    "category": "Wine",
+    "subcategory": "Sparkling Wine",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 1095,
+    "vendor_type": "Wine Vendor",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Wine service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "IPA Beer Bottle",
+    "category": "Beer",
+    "subcategory": "Bottled Beer",
+    "unit_of_measure": "case",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 180,
+    "vendor_type": "Beer Vendor",
+    "estimated_cost": 28.0,
+    "use_cases": [
+      "Beer service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Lager Beer Bottle",
+    "category": "Beer",
+    "subcategory": "Bottled Beer",
+    "unit_of_measure": "case",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 180,
+    "vendor_type": "Beer Vendor",
+    "estimated_cost": 24.0,
+    "use_cases": [
+      "Beer service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Stout Beer Bottle",
+    "category": "Beer",
+    "subcategory": "Bottled Beer",
+    "unit_of_measure": "case",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 180,
+    "vendor_type": "Beer Vendor",
+    "estimated_cost": 30.0,
+    "use_cases": [
+      "Beer service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Wheat Beer Bottle",
+    "category": "Beer",
+    "subcategory": "Bottled Beer",
+    "unit_of_measure": "case",
+    "storage_type": "Refrigerated",
+    "shelf_life_days": 180,
+    "vendor_type": "Beer Vendor",
+    "estimated_cost": 26.0,
+    "use_cases": [
+      "Beer service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "item_name": "Sanitizing Wipes",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 45.0,
+    "use_cases": [
+      "Cleaning"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Food Service Gloves",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 25.0,
+    "use_cases": [
+      "Food prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Foil Roll",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "roll",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Food prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Plastic Wrap",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "roll",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 6.0,
+    "use_cases": [
+      "Food prep"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Parchment Paper",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "roll",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Baking"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Takeout Boxes",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 35.0,
+    "use_cases": [
+      "Takeout"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Paper Soup Cups",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 28.0,
+    "use_cases": [
+      "Takeout"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Straws Paper",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 15.0,
+    "use_cases": [
+      "Beverages"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Napkins",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 22.0,
+    "use_cases": [
+      "Dining"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Coffee Filters",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "US Foods",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Coffee"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Dishwasher Tablets",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 35.0,
+    "use_cases": [
+      "Dishwashing"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Floor Cleaner",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "gal",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Cleaning"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Degreaser",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "gal",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 22.0,
+    "use_cases": [
+      "Cleaning"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Hand Soap",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Handwashing"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Paper Towels",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 45.0,
+    "use_cases": [
+      "Cleaning"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Trash Bags Large",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "roll",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 28.0,
+    "use_cases": [
+      "Waste"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Trash Bags Small",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "roll",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 15.0,
+    "use_cases": [
+      "Waste"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Bleach",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "gal",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Cleaning"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Spray Sanitizer",
+    "category": "Cleaning",
+    "subcategory": "Supplies",
+    "unit_of_measure": "bottle",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Sanitizing"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Pens",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Pencils",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Highlighters",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 10.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Sharpies",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Labeling"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Dry Erase Markers",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 15.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Erasers",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Receipt Printer Paper",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "roll",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 25.0,
+    "use_cases": [
+      "POS"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Order Ticket Paper",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "roll",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 20.0,
+    "use_cases": [
+      "Kitchen"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Menu Paper",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "ream",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 35.0,
+    "use_cases": [
+      "Menus"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Guest Check Books",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "pad",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Service"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Notepads",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "pad",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 5.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Clipboards",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "ea",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Staplers",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "ea",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 15.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Staples",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 4.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Tape",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "roll",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 3.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Tape Dispenser",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "ea",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Folders",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Envelopes",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 8.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Rubber Bands",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "box",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 3.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Calculator",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "ea",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 25.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "USB Drive",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "ea",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 15.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Cleaning Cloths",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 30.0,
+    "use_cases": [
+      "Cleaning"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Hand Sanitizer Bottles",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "case",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Janitorial Supply",
+    "estimated_cost": 40.0,
+    "use_cases": [
+      "Sanitizing"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Labels Blank",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "roll",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 12.0,
+    "use_cases": [
+      "Labeling"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Label Printer Tape",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "roll",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 18.0,
+    "use_cases": [
+      "Labeling"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  },
+  {
+    "item_name": "Inventory Binders",
+    "category": "Office",
+    "subcategory": "Supplies",
+    "unit_of_measure": "ea",
+    "storage_type": "Dry",
+    "shelf_life_days": 365,
+    "vendor_type": "Office Supply",
+    "estimated_cost": 20.0,
+    "use_cases": [
+      "Office"
+    ],
+    "yield_percent": 100,
+    "waste_percent": 0,
+    "allergens": []
+  }
+]

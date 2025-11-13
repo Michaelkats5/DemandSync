@@ -73,3 +73,12 @@ def upsert_forecasts(rows: list[dict], db: Session = Depends(get_db)):
 
 # Include the API router
 app.include_router(api_router)
+
+# Include additional routers
+try:
+    from app.routers import external, forecast, dashboards
+    app.include_router(external.router, prefix="/api/v1")
+    app.include_router(forecast.router, prefix="/api/v1")
+    app.include_router(dashboards.router, prefix="/api/v1")
+except ImportError as e:
+    print(f"Warning: Could not import routers: {e}")

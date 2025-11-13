@@ -1,0 +1,302 @@
+[
+  {
+    "capex_item": "Kitchen Equipment Replacement",
+    "category": "Equipment",
+    "season": "fall",
+    "cost_estimate": 50000.0,
+    "replacement_cycle_years": 10,
+    "vendor_type": "Equipment Vendor",
+    "priority_level": "high",
+    "reason": "efficiency"
+  },
+  {
+    "capex_item": "Grill Repairs",
+    "category": "Equipment",
+    "season": "spring",
+    "cost_estimate": 5000.0,
+    "replacement_cycle_years": 5,
+    "vendor_type": "Equipment Vendor",
+    "priority_level": "high",
+    "reason": "safety"
+  },
+  {
+    "capex_item": "HVAC Service",
+    "category": "HVAC",
+    "season": "spring",
+    "cost_estimate": 3000.0,
+    "replacement_cycle_years": 1,
+    "vendor_type": "HVAC Service",
+    "priority_level": "medium",
+    "reason": "efficiency"
+  },
+  {
+    "capex_item": "Refrigeration Maintenance",
+    "category": "Equipment",
+    "season": "summer",
+    "cost_estimate": 4000.0,
+    "replacement_cycle_years": 2,
+    "vendor_type": "Refrigeration Service",
+    "priority_level": "high",
+    "reason": "safety"
+  },
+  {
+    "capex_item": "Technology Replacements",
+    "category": "Technology",
+    "season": "winter",
+    "cost_estimate": 15000.0,
+    "replacement_cycle_years": 3,
+    "vendor_type": "Tech Vendor",
+    "priority_level": "medium",
+    "reason": "efficiency"
+  },
+  {
+    "capex_item": "Patio Heaters",
+    "category": "Furniture",
+    "season": "fall",
+    "cost_estimate": 8000.0,
+    "replacement_cycle_years": 5,
+    "vendor_type": "Furniture Vendor",
+    "priority_level": "medium",
+    "reason": "guest experience"
+  },
+  {
+    "capex_item": "Seasonal Furniture",
+    "category": "Furniture",
+    "season": "spring",
+    "cost_estimate": 12000.0,
+    "replacement_cycle_years": 3,
+    "vendor_type": "Furniture Vendor",
+    "priority_level": "low",
+    "reason": "guest experience"
+  },
+  {
+    "capex_item": "Decor Refreshes",
+    "category": "Decor",
+    "season": "winter",
+    "cost_estimate": 10000.0,
+    "replacement_cycle_years": 2,
+    "vendor_type": "Decor Vendor",
+    "priority_level": "low",
+    "reason": "guest experience"
+  },
+  {
+    "capex_item": "Plumbing Service",
+    "category": "Plumbing",
+    "season": "summer",
+    "cost_estimate": 2500.0,
+    "replacement_cycle_years": 1,
+    "vendor_type": "Plumbing Service",
+    "priority_level": "high",
+    "reason": "safety"
+  },
+  {
+    "capex_item": "Hood Cleaning",
+    "category": "Maintenance",
+    "season": "quarterly",
+    "cost_estimate": 1500.0,
+    "replacement_cycle_years": 0.25,
+    "vendor_type": "Cleaning Service",
+    "priority_level": "high",
+    "reason": "compliance"
+  },
+  {
+    "capex_item": "Fire Suppression Maintenance",
+    "category": "Safety",
+    "season": "quarterly",
+    "cost_estimate": 2000.0,
+    "replacement_cycle_years": 0.25,
+    "vendor_type": "Safety Service",
+    "priority_level": "high",
+    "reason": "compliance"
+  },
+  {
+    "capex_item": "POS System Upgrade",
+    "category": "Technology",
+    "season": "winter",
+    "cost_estimate": 20000.0,
+    "replacement_cycle_years": 5,
+    "vendor_type": "Tech Vendor",
+    "priority_level": "medium",
+    "reason": "efficiency"
+  },
+  {
+    "capex_item": "Kitchen Display System",
+    "category": "Technology",
+    "season": "spring",
+    "cost_estimate": 12000.0,
+    "replacement_cycle_years": 5,
+    "vendor_type": "Tech Vendor",
+    "priority_level": "medium",
+    "reason": "efficiency"
+  },
+  {
+    "capex_item": "Walk-in Cooler Replacement",
+    "category": "Equipment",
+    "season": "summer",
+    "cost_estimate": 35000.0,
+    "replacement_cycle_years": 15,
+    "vendor_type": "Equipment Vendor",
+    "priority_level": "high",
+    "reason": "safety"
+  },
+  {
+    "capex_item": "Dishwasher Replacement",
+    "category": "Equipment",
+    "season": "fall",
+    "cost_estimate": 18000.0,
+    "replacement_cycle_years": 8,
+    "vendor_type": "Equipment Vendor",
+    "priority_level": "high",
+    "reason": "efficiency"
+  },
+  {
+    "capex_item": "Ice Machine Service",
+    "category": "Equipment",
+    "season": "summer",
+    "cost_estimate": 2000.0,
+    "replacement_cycle_years": 1,
+    "vendor_type": "Equipment Service",
+    "priority_level": "medium",
+    "reason": "efficiency"
+  },
+  {
+    "capex_item": "Exhaust Fan Replacement",
+    "category": "HVAC",
+    "season": "spring",
+    "cost_estimate": 6000.0,
+    "replacement_cycle_years": 10,
+    "vendor_type": "HVAC Service",
+    "priority_level": "high",
+    "reason": "compliance"
+  },
+  {
+    "capex_item": "Lighting Upgrade LED",
+    "category": "Electrical",
+    "season": "winter",
+    "cost_estimate": 8000.0,
+    "replacement_cycle_years": 5,
+    "vendor_type": "Electrical Service",
+    "priority_level": "medium",
+    "reason": "efficiency"
+  },
+  {
+    "capex_item": "Security System Upgrade",
+    "category": "Security",
+    "season": "fall",
+    "cost_estimate": 10000.0,
+    "replacement_cycle_years": 5,
+    "vendor_type": "Security Vendor",
+    "priority_level": "medium",
+    "reason": "safety"
+  },
+  {
+    "capex_item": "Parking Lot Repaving",
+    "category": "Exterior",
+    "season": "summer",
+    "cost_estimate": 25000.0,
+    "replacement_cycle_years": 10,
+    "vendor_type": "Contractor",
+    "priority_level": "low",
+    "reason": "guest experience"
+  },
+  {
+    "capex_item": "Signage Replacement",
+    "category": "Exterior",
+    "season": "spring",
+    "cost_estimate": 5000.0,
+    "replacement_cycle_years": 7,
+    "vendor_type": "Sign Vendor",
+    "priority_level": "low",
+    "reason": "guest experience"
+  },
+  {
+    "capex_item": "Window Replacement",
+    "category": "Building",
+    "season": "fall",
+    "cost_estimate": 15000.0,
+    "replacement_cycle_years": 20,
+    "vendor_type": "Contractor",
+    "priority_level": "low",
+    "reason": "efficiency"
+  },
+  {
+    "capex_item": "Roof Inspection & Repair",
+    "category": "Building",
+    "season": "spring",
+    "cost_estimate": 8000.0,
+    "replacement_cycle_years": 5,
+    "vendor_type": "Contractor",
+    "priority_level": "high",
+    "reason": "safety"
+  },
+  {
+    "capex_item": "Flooring Replacement",
+    "category": "Interior",
+    "season": "winter",
+    "cost_estimate": 20000.0,
+    "replacement_cycle_years": 8,
+    "vendor_type": "Contractor",
+    "priority_level": "medium",
+    "reason": "guest experience"
+  },
+  {
+    "capex_item": "Bar Equipment Upgrade",
+    "category": "Equipment",
+    "season": "spring",
+    "cost_estimate": 12000.0,
+    "replacement_cycle_years": 5,
+    "vendor_type": "Equipment Vendor",
+    "priority_level": "medium",
+    "reason": "efficiency"
+  },
+  {
+    "capex_item": "Wine Storage System",
+    "category": "Equipment",
+    "season": "fall",
+    "cost_estimate": 15000.0,
+    "replacement_cycle_years": 10,
+    "vendor_type": "Equipment Vendor",
+    "priority_level": "low",
+    "reason": "guest experience"
+  },
+  {
+    "capex_item": "Outdoor Seating Furniture",
+    "category": "Furniture",
+    "season": "spring",
+    "cost_estimate": 18000.0,
+    "replacement_cycle_years": 5,
+    "vendor_type": "Furniture Vendor",
+    "priority_level": "low",
+    "reason": "guest experience"
+  },
+  {
+    "capex_item": "Sound System Upgrade",
+    "category": "Technology",
+    "season": "winter",
+    "cost_estimate": 10000.0,
+    "replacement_cycle_years": 5,
+    "vendor_type": "Tech Vendor",
+    "priority_level": "low",
+    "reason": "guest experience"
+  },
+  {
+    "capex_item": "Water Filtration System",
+    "category": "Plumbing",
+    "season": "summer",
+    "cost_estimate": 5000.0,
+    "replacement_cycle_years": 3,
+    "vendor_type": "Plumbing Service",
+    "priority_level": "medium",
+    "reason": "efficiency"
+  },
+  {
+    "capex_item": "Grease Trap Service",
+    "category": "Plumbing",
+    "season": "quarterly",
+    "cost_estimate": 800.0,
+    "replacement_cycle_years": 0.25,
+    "vendor_type": "Plumbing Service",
+    "priority_level": "high",
+    "reason": "compliance"
+  }
+]
