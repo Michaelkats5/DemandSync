@@ -1,0 +1,1045 @@
+{
+  "kpiDetail": {
+    "dailyKPIs": [
+      {
+        "date": "2024-05-01",
+        "salesRev": 12450.00,
+        "costOfGoods": {
+          "food": 3735.00,
+          "beverage": 1245.00,
+          "liquor": 1867.50
+        },
+        "laborCost": {
+          "foh": 1867.50,
+          "boh": 2490.00,
+          "total": 4357.50
+        },
+        "trafficCount": 145,
+        "averageCheck": 85.86,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 68.5, "revenue": 1850.00},
+          {"item": "Porterhouse", "margin": 67.2, "revenue": 1620.00},
+          {"item": "Lobster Tails", "margin": 65.8, "revenue": 1470.00},
+          {"item": "Cabernet Sauvignon", "margin": 72.3, "revenue": 890.00},
+          {"item": "Dry-Aged New York Strip", "margin": 66.1, "revenue": 2120.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 11800.00, "actual": 12450.00, "variance": 5.5},
+          "traffic": {"predicted": 138, "actual": 145, "variance": 5.1},
+          "labor": {"predicted": 4200.00, "actual": 4357.50, "variance": 3.8},
+          "cogs": {"predicted": 6800.00, "actual": 6847.50, "variance": 0.7}
+        }
+      },
+      {
+        "date": "2024-05-15",
+        "salesRev": 15230.00,
+        "costOfGoods": {
+          "food": 4569.00,
+          "beverage": 1523.00,
+          "liquor": 2284.50
+        },
+        "laborCost": {
+          "foh": 2284.50,
+          "boh": 3046.00,
+          "total": 5330.50
+        },
+        "trafficCount": 178,
+        "averageCheck": 85.56,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 68.5, "revenue": 2350.00},
+          {"item": "Porterhouse", "margin": 67.2, "revenue": 1980.00},
+          {"item": "Lobster Tails", "margin": 65.8, "revenue": 1960.00},
+          {"item": "Cabernet Sauvignon", "margin": 72.3, "revenue": 1120.00},
+          {"item": "Kona-Crusted Strip", "margin": 66.8, "revenue": 2750.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 14800.00, "actual": 15230.00, "variance": 2.9},
+          "traffic": {"predicted": 172, "actual": 178, "variance": 3.5},
+          "labor": {"predicted": 5100.00, "actual": 5330.50, "variance": 4.5},
+          "cogs": {"predicted": 8376.00, "actual": 8376.50, "variance": 0.0}
+        }
+      },
+      {
+        "date": "2024-06-01",
+        "salesRev": 13890.00,
+        "costOfGoods": {
+          "food": 4167.00,
+          "beverage": 1389.00,
+          "liquor": 2083.50
+        },
+        "laborCost": {
+          "foh": 2083.50,
+          "boh": 2778.00,
+          "total": 4861.50
+        },
+        "trafficCount": 162,
+        "averageCheck": 85.74,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 68.2, "revenue": 2030.00},
+          {"item": "Porterhouse", "margin": 67.0, "revenue": 1940.00},
+          {"item": "Lobster Tails", "margin": 65.5, "revenue": 1760.00},
+          {"item": "Cabernet Sauvignon", "margin": 72.1, "revenue": 980.00},
+          {"item": "Dry-Aged New York Strip", "margin": 65.9, "revenue": 2280.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 13500.00, "actual": 13890.00, "variance": 2.9},
+          "traffic": {"predicted": 158, "actual": 162, "variance": 2.5},
+          "labor": {"predicted": 4725.00, "actual": 4861.50, "variance": 2.9},
+          "cogs": {"predicted": 7637.50, "actual": 7639.50, "variance": 0.0}
+        }
+      },
+      {
+        "date": "2024-07-15",
+        "salesRev": 16850.00,
+        "costOfGoods": {
+          "food": 5055.00,
+          "beverage": 1685.00,
+          "liquor": 2527.50
+        },
+        "laborCost": {
+          "foh": 2527.50,
+          "boh": 3370.00,
+          "total": 5897.50
+        },
+        "trafficCount": 196,
+        "averageCheck": 85.97,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 67.8, "revenue": 2840.00},
+          {"item": "Porterhouse", "margin": 66.5, "revenue": 2560.00},
+          {"item": "Lobster Tails", "margin": 65.2, "revenue": 2450.00},
+          {"item": "Cabernet Sauvignon", "margin": 71.9, "revenue": 1350.00},
+          {"item": "Kona-Crusted Strip", "margin": 66.2, "revenue": 3290.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 16200.00, "actual": 16850.00, "variance": 4.0},
+          "traffic": {"predicted": 188, "actual": 196, "variance": 4.3},
+          "labor": {"predicted": 5670.00, "actual": 5897.50, "variance": 4.0},
+          "cogs": {"predicted": 9267.50, "actual": 9267.50, "variance": 0.0}
+        }
+      },
+      {
+        "date": "2024-08-01",
+        "salesRev": 14560.00,
+        "costOfGoods": {
+          "food": 4368.00,
+          "beverage": 1456.00,
+          "liquor": 2184.00
+        },
+        "laborCost": {
+          "foh": 2184.00,
+          "boh": 2912.00,
+          "total": 5096.00
+        },
+        "trafficCount": 170,
+        "averageCheck": 85.65,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 68.0, "revenue": 2320.00},
+          {"item": "Porterhouse", "margin": 66.8, "revenue": 2080.00},
+          {"item": "Lobster Tails", "margin": 65.4, "revenue": 1960.00},
+          {"item": "Cabernet Sauvignon", "margin": 72.0, "revenue": 1080.00},
+          {"item": "Dry-Aged New York Strip", "margin": 66.0, "revenue": 2650.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 14200.00, "actual": 14560.00, "variance": 2.5},
+          "traffic": {"predicted": 166, "actual": 170, "variance": 2.4},
+          "labor": {"predicted": 4970.00, "actual": 5096.00, "variance": 2.5},
+          "cogs": {"predicted": 8008.00, "actual": 8008.00, "variance": 0.0}
+        }
+      },
+      {
+        "date": "2024-09-15",
+        "salesRev": 16230.00,
+        "costOfGoods": {
+          "food": 4869.00,
+          "beverage": 1623.00,
+          "liquor": 2434.50
+        },
+        "laborCost": {
+          "foh": 2434.50,
+          "boh": 3246.00,
+          "total": 5680.50
+        },
+        "trafficCount": 189,
+        "averageCheck": 85.87,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 67.5, "revenue": 2710.00},
+          {"item": "Porterhouse", "margin": 66.2, "revenue": 2530.00},
+          {"item": "Lobster Tails", "margin": 64.8, "revenue": 2450.00},
+          {"item": "Cabernet Sauvignon", "margin": 71.7, "revenue": 1280.00},
+          {"item": "Kona-Crusted Strip", "margin": 65.9, "revenue": 3100.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 15800.00, "actual": 16230.00, "variance": 2.7},
+          "traffic": {"predicted": 184, "actual": 189, "variance": 2.7},
+          "labor": {"predicted": 5535.00, "actual": 5680.50, "variance": 2.6},
+          "cogs": {"predicted": 8926.50, "actual": 8926.50, "variance": 0.0}
+        }
+      },
+      {
+        "date": "2024-10-01",
+        "salesRev": 14980.00,
+        "costOfGoods": {
+          "food": 4494.00,
+          "beverage": 1498.00,
+          "liquor": 2247.00
+        },
+        "laborCost": {
+          "foh": 2247.00,
+          "boh": 2996.00,
+          "total": 5243.00
+        },
+        "trafficCount": 175,
+        "averageCheck": 85.60,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 68.3, "revenue": 2490.00},
+          {"item": "Porterhouse", "margin": 67.1, "revenue": 2240.00},
+          {"item": "Lobster Tails", "margin": 65.6, "revenue": 2100.00},
+          {"item": "Cabernet Sauvignon", "margin": 72.2, "revenue": 1150.00},
+          {"item": "Dry-Aged New York Strip", "margin": 66.2, "revenue": 2720.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 14600.00, "actual": 14980.00, "variance": 2.6},
+          "traffic": {"predicted": 171, "actual": 175, "variance": 2.3},
+          "labor": {"predicted": 5115.00, "actual": 5243.00, "variance": 2.5},
+          "cogs": {"predicted": 8239.00, "actual": 8239.00, "variance": 0.0}
+        }
+      }
+    ],
+    "weeklyKPIs": [
+      {
+        "weekEnding": "2024-05-05",
+        "salesRev": 87250.00,
+        "costOfGoods": {
+          "food": 26175.00,
+          "beverage": 8725.00,
+          "liquor": 13087.50
+        },
+        "laborCost": {
+          "foh": 13087.50,
+          "boh": 17450.00,
+          "total": 30537.50
+        },
+        "trafficCount": 1015,
+        "averageCheck": 85.96,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 68.4, "revenue": 12950.00},
+          {"item": "Porterhouse", "margin": 67.1, "revenue": 11340.00},
+          {"item": "Lobster Tails", "margin": 65.7, "revenue": 10290.00},
+          {"item": "Cabernet Sauvignon", "margin": 72.2, "revenue": 6230.00},
+          {"item": "Dry-Aged New York Strip", "margin": 66.0, "revenue": 14840.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 82600.00, "actual": 87250.00, "variance": 5.6},
+          "traffic": {"predicted": 966, "actual": 1015, "variance": 5.1},
+          "labor": {"predicted": 29400.00, "actual": 30537.50, "variance": 3.9},
+          "cogs": {"predicted": 47987.50, "actual": 47987.50, "variance": 0.0}
+        }
+      },
+      {
+        "weekEnding": "2024-06-09",
+        "salesRev": 97230.00,
+        "costOfGoods": {
+          "food": 29169.00,
+          "beverage": 9723.00,
+          "liquor": 14584.50
+        },
+        "laborCost": {
+          "foh": 14584.50,
+          "boh": 19446.00,
+          "total": 34030.50
+        },
+        "trafficCount": 1134,
+        "averageCheck": 85.74,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 68.1, "revenue": 14210.00},
+          {"item": "Porterhouse", "margin": 66.9, "revenue": 13580.00},
+          {"item": "Lobster Tails", "margin": 65.4, "revenue": 12320.00},
+          {"item": "Cabernet Sauvignon", "margin": 72.0, "revenue": 6860.00},
+          {"item": "Dry-Aged New York Strip", "margin": 65.8, "revenue": 15960.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 94500.00, "actual": 97230.00, "variance": 2.9},
+          "traffic": {"predicted": 1106, "actual": 1134, "variance": 2.5},
+          "labor": {"predicted": 33075.00, "actual": 34030.50, "variance": 2.9},
+          "cogs": {"predicted": 53476.50, "actual": 53476.50, "variance": 0.0}
+        }
+      },
+      {
+        "weekEnding": "2024-07-14",
+        "salesRev": 117950.00,
+        "costOfGoods": {
+          "food": 35385.00,
+          "beverage": 11795.00,
+          "liquor": 17692.50
+        },
+        "laborCost": {
+          "foh": 17692.50,
+          "boh": 23590.00,
+          "total": 41282.50
+        },
+        "trafficCount": 1372,
+        "averageCheck": 85.97,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 67.7, "revenue": 19880.00},
+          {"item": "Porterhouse", "margin": 66.4, "revenue": 17920.00},
+          {"item": "Lobster Tails", "margin": 65.1, "revenue": 17150.00},
+          {"item": "Cabernet Sauvignon", "margin": 71.8, "revenue": 9450.00},
+          {"item": "Kona-Crusted Strip", "margin": 66.1, "revenue": 23030.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 113400.00, "actual": 117950.00, "variance": 4.0},
+          "traffic": {"predicted": 1316, "actual": 1372, "variance": 4.3},
+          "labor": {"predicted": 39690.00, "actual": 41282.50, "variance": 4.0},
+          "cogs": {"predicted": 64872.50, "actual": 64872.50, "variance": 0.0}
+        }
+      },
+      {
+        "weekEnding": "2024-08-18",
+        "salesRev": 101920.00,
+        "costOfGoods": {
+          "food": 30576.00,
+          "beverage": 10192.00,
+          "liquor": 15288.00
+        },
+        "laborCost": {
+          "foh": 15288.00,
+          "boh": 20384.00,
+          "total": 35672.00
+        },
+        "trafficCount": 1190,
+        "averageCheck": 85.65,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 67.9, "revenue": 16240.00},
+          {"item": "Porterhouse", "margin": 66.7, "revenue": 14560.00},
+          {"item": "Lobster Tails", "margin": 65.3, "revenue": 13720.00},
+          {"item": "Cabernet Sauvignon", "margin": 71.9, "revenue": 7560.00},
+          {"item": "Dry-Aged New York Strip", "margin": 65.9, "revenue": 18550.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 99400.00, "actual": 101920.00, "variance": 2.5},
+          "traffic": {"predicted": 1162, "actual": 1190, "variance": 2.4},
+          "labor": {"predicted": 34790.00, "actual": 35672.00, "variance": 2.5},
+          "cogs": {"predicted": 56056.00, "actual": 56056.00, "variance": 0.0}
+        }
+      },
+      {
+        "weekEnding": "2024-09-22",
+        "salesRev": 113610.00,
+        "costOfGoods": {
+          "food": 34083.00,
+          "beverage": 11361.00,
+          "liquor": 17041.50
+        },
+        "laborCost": {
+          "foh": 17041.50,
+          "boh": 22722.00,
+          "total": 39763.50
+        },
+        "trafficCount": 1323,
+        "averageCheck": 85.87,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 67.4, "revenue": 18970.00},
+          {"item": "Porterhouse", "margin": 66.1, "revenue": 17710.00},
+          {"item": "Lobster Tails", "margin": 64.7, "revenue": 17150.00},
+          {"item": "Cabernet Sauvignon", "margin": 71.6, "revenue": 8960.00},
+          {"item": "Kona-Crusted Strip", "margin": 65.8, "revenue": 21700.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 110600.00, "actual": 113610.00, "variance": 2.7},
+          "traffic": {"predicted": 1288, "actual": 1323, "variance": 2.7},
+          "labor": {"predicted": 38745.00, "actual": 39763.50, "variance": 2.6},
+          "cogs": {"predicted": 62485.50, "actual": 62485.50, "variance": 0.0}
+        }
+      },
+      {
+        "weekEnding": "2024-10-06",
+        "salesRev": 104860.00,
+        "costOfGoods": {
+          "food": 31458.00,
+          "beverage": 10486.00,
+          "liquor": 15729.00
+        },
+        "laborCost": {
+          "foh": 15729.00,
+          "boh": 20972.00,
+          "total": 36701.00
+        },
+        "trafficCount": 1225,
+        "averageCheck": 85.60,
+        "itemMarginLeaders": [
+          {"item": "Bone-In Ribeye", "margin": 68.2, "revenue": 17430.00},
+          {"item": "Porterhouse", "margin": 67.0, "revenue": 15680.00},
+          {"item": "Lobster Tails", "margin": 65.5, "revenue": 14700.00},
+          {"item": "Cabernet Sauvignon", "margin": 72.1, "revenue": 8050.00},
+          {"item": "Dry-Aged New York Strip", "margin": 66.1, "revenue": 19040.00}
+        ],
+        "variance": {
+          "sales": {"predicted": 102200.00, "actual": 104860.00, "variance": 2.6},
+          "traffic": {"predicted": 1197, "actual": 1225, "variance": 2.3},
+          "labor": {"predicted": 35805.00, "actual": 36701.00, "variance": 2.5},
+          "cogs": {"predicted": 57673.00, "actual": 57673.00, "variance": 0.0}
+        }
+      }
+    ]
+  },
+  "commodityAnalytics": {
+    "beef": {
+      "ribeye": {
+        "currentPrice": 16.50,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 15.75, "volatility": 0.08},
+          {"month": "2024-06", "price": 16.20, "volatility": 0.12},
+          {"month": "2024-07", "price": 16.85, "volatility": 0.15},
+          {"month": "2024-08", "price": 16.50, "volatility": 0.10},
+          {"month": "2024-09", "price": 16.65, "volatility": 0.09},
+          {"month": "2024-10", "price": 16.50, "volatility": 0.11}
+        ],
+        "seasonalityIndex": 1.05,
+        "forecastPriceNext30Days": 16.75,
+        "vendorVariation": {
+          "bestVendor": {"name": "US Foods", "price": 16.25, "reliability": 0.95},
+          "worstVendor": {"name": "Sysco", "price": 16.95, "reliability": 0.88}
+        }
+      },
+      "strip": {
+        "currentPrice": 18.75,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 18.20, "volatility": 0.06},
+          {"month": "2024-06", "price": 18.50, "volatility": 0.08},
+          {"month": "2024-07", "price": 19.10, "volatility": 0.12},
+          {"month": "2024-08", "price": 18.75, "volatility": 0.09},
+          {"month": "2024-09", "price": 18.90, "volatility": 0.07},
+          {"month": "2024-10", "price": 18.75, "volatility": 0.10}
+        ],
+        "seasonalityIndex": 1.03,
+        "forecastPriceNext30Days": 19.00,
+        "vendorVariation": {
+          "bestVendor": {"name": "US Foods", "price": 18.50, "reliability": 0.96},
+          "worstVendor": {"name": "Sysco", "price": 19.25, "reliability": 0.90}
+        }
+      },
+      "tenderloin": {
+        "currentPrice": 24.50,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 23.75, "volatility": 0.05},
+          {"month": "2024-06", "price": 24.20, "volatility": 0.07},
+          {"month": "2024-07", "price": 24.95, "volatility": 0.10},
+          {"month": "2024-08", "price": 24.50, "volatility": 0.08},
+          {"month": "2024-09", "price": 24.65, "volatility": 0.06},
+          {"month": "2024-10", "price": 24.50, "volatility": 0.09}
+        ],
+        "seasonalityIndex": 1.02,
+        "forecastPriceNext30Days": 24.75,
+        "vendorVariation": {
+          "bestVendor": {"name": "US Foods", "price": 24.25, "reliability": 0.97},
+          "worstVendor": {"name": "Sysco", "price": 25.00, "reliability": 0.92}
+        }
+      }
+    },
+    "seafood": {
+      "lobster": {
+        "currentPrice": 12.75,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 11.50, "volatility": 0.18},
+          {"month": "2024-06", "price": 12.20, "volatility": 0.22},
+          {"month": "2024-07", "price": 13.50, "volatility": 0.25},
+          {"month": "2024-08", "price": 12.75, "volatility": 0.20},
+          {"month": "2024-09", "price": 13.00, "volatility": 0.19},
+          {"month": "2024-10", "price": 12.75, "volatility": 0.21}
+        ],
+        "seasonalityIndex": 1.15,
+        "forecastPriceNext30Days": 13.25,
+        "vendorVariation": {
+          "bestVendor": {"name": "Local Seafood", "price": 12.50, "reliability": 0.93},
+          "worstVendor": {"name": "Sysco", "price": 13.25, "reliability": 0.85}
+        }
+      },
+      "shrimp": {
+        "currentPrice": 18.50,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 17.25, "volatility": 0.15},
+          {"month": "2024-06", "price": 18.00, "volatility": 0.18},
+          {"month": "2024-07", "price": 19.25, "volatility": 0.20},
+          {"month": "2024-08", "price": 18.50, "volatility": 0.16},
+          {"month": "2024-09", "price": 18.75, "volatility": 0.17},
+          {"month": "2024-10", "price": 18.50, "volatility": 0.19}
+        ],
+        "seasonalityIndex": 1.12,
+        "forecastPriceNext30Days": 19.00,
+        "vendorVariation": {
+          "bestVendor": {"name": "Local Seafood", "price": 18.25, "reliability": 0.94},
+          "worstVendor": {"name": "Sysco", "price": 19.00, "reliability": 0.87}
+        }
+      },
+      "salmon": {
+        "currentPrice": 11.50,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 10.75, "volatility": 0.12},
+          {"month": "2024-06", "price": 11.20, "volatility": 0.14},
+          {"month": "2024-07", "price": 12.00, "volatility": 0.16},
+          {"month": "2024-08", "price": 11.50, "volatility": 0.13},
+          {"month": "2024-09", "price": 11.65, "volatility": 0.15},
+          {"month": "2024-10", "price": 11.50, "volatility": 0.14}
+        ],
+        "seasonalityIndex": 1.08,
+        "forecastPriceNext30Days": 11.75,
+        "vendorVariation": {
+          "bestVendor": {"name": "Local Seafood", "price": 11.25, "reliability": 0.95},
+          "worstVendor": {"name": "Sysco", "price": 12.00, "reliability": 0.89}
+        }
+      },
+      "seaBass": {
+        "currentPrice": 14.75,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 13.50, "volatility": 0.16},
+          {"month": "2024-06", "price": 14.20, "volatility": 0.18},
+          {"month": "2024-07", "price": 15.50, "volatility": 0.20},
+          {"month": "2024-08", "price": 14.75, "volatility": 0.17},
+          {"month": "2024-09", "price": 15.00, "volatility": 0.19},
+          {"month": "2024-10", "price": 14.75, "volatility": 0.18}
+        ],
+        "seasonalityIndex": 1.13,
+        "forecastPriceNext30Days": 15.25,
+        "vendorVariation": {
+          "bestVendor": {"name": "Local Seafood", "price": 14.50, "reliability": 0.92},
+          "worstVendor": {"name": "Sysco", "price": 15.25, "reliability": 0.86}
+        }
+      }
+    },
+    "dairy": {
+      "cheese": {
+        "currentPrice": 6.50,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 6.25, "volatility": 0.04},
+          {"month": "2024-06", "price": 6.40, "volatility": 0.05},
+          {"month": "2024-07", "price": 6.65, "volatility": 0.06},
+          {"month": "2024-08", "price": 6.50, "volatility": 0.05},
+          {"month": "2024-09", "price": 6.55, "volatility": 0.04},
+          {"month": "2024-10", "price": 6.50, "volatility": 0.05}
+        ],
+        "seasonalityIndex": 1.01,
+        "forecastPriceNext30Days": 6.55,
+        "vendorVariation": {
+          "bestVendor": {"name": "Sysco", "price": 6.40, "reliability": 0.98},
+          "worstVendor": {"name": "US Foods", "price": 6.75, "reliability": 0.95}
+        }
+      },
+      "butter": {
+        "currentPrice": 4.25,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 4.10, "volatility": 0.05},
+          {"month": "2024-06", "price": 4.20, "volatility": 0.06},
+          {"month": "2024-07", "price": 4.35, "volatility": 0.07},
+          {"month": "2024-08", "price": 4.25, "volatility": 0.06},
+          {"month": "2024-09", "price": 4.30, "volatility": 0.05},
+          {"month": "2024-10", "price": 4.25, "volatility": 0.06}
+        ],
+        "seasonalityIndex": 1.02,
+        "forecastPriceNext30Days": 4.30,
+        "vendorVariation": {
+          "bestVendor": {"name": "Sysco", "price": 4.15, "reliability": 0.97},
+          "worstVendor": {"name": "US Foods", "price": 4.40, "reliability": 0.94}
+        }
+      },
+      "cream": {
+        "currentPrice": 3.75,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 3.60, "volatility": 0.04},
+          {"month": "2024-06", "price": 3.70, "volatility": 0.05},
+          {"month": "2024-07", "price": 3.85, "volatility": 0.06},
+          {"month": "2024-08", "price": 3.75, "volatility": 0.05},
+          {"month": "2024-09", "price": 3.80, "volatility": 0.04},
+          {"month": "2024-10", "price": 3.75, "volatility": 0.05}
+        ],
+        "seasonalityIndex": 1.01,
+        "forecastPriceNext30Days": 3.80,
+        "vendorVariation": {
+          "bestVendor": {"name": "Sysco", "price": 3.65, "reliability": 0.98},
+          "worstVendor": {"name": "US Foods", "price": 3.90, "reliability": 0.95}
+        }
+      }
+    },
+    "produce": {
+      "lettuce": {
+        "currentPrice": 5.50,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 4.75, "volatility": 0.10},
+          {"month": "2024-06", "price": 5.20, "volatility": 0.12},
+          {"month": "2024-07", "price": 6.00, "volatility": 0.15},
+          {"month": "2024-08", "price": 5.50, "volatility": 0.11},
+          {"month": "2024-09", "price": 5.65, "volatility": 0.10},
+          {"month": "2024-10", "price": 5.50, "volatility": 0.12}
+        ],
+        "seasonalityIndex": 1.10,
+        "forecastPriceNext30Days": 5.75,
+        "vendorVariation": {
+          "bestVendor": {"name": "Produce Vendor", "price": 5.40, "reliability": 0.96},
+          "worstVendor": {"name": "Sysco", "price": 5.85, "reliability": 0.91}
+        }
+      },
+      "tomatoes": {
+        "currentPrice": 4.75,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 4.25, "volatility": 0.08},
+          {"month": "2024-06", "price": 4.50, "volatility": 0.10},
+          {"month": "2024-07", "price": 5.25, "volatility": 0.12},
+          {"month": "2024-08", "price": 4.75, "volatility": 0.09},
+          {"month": "2024-09", "price": 4.90, "volatility": 0.08},
+          {"month": "2024-10", "price": 4.75, "volatility": 0.10}
+        ],
+        "seasonalityIndex": 1.08,
+        "forecastPriceNext30Days": 5.00,
+        "vendorVariation": {
+          "bestVendor": {"name": "Produce Vendor", "price": 4.65, "reliability": 0.95},
+          "worstVendor": {"name": "Sysco", "price": 5.10, "reliability": 0.90}
+        }
+      },
+      "onions": {
+        "currentPrice": 0.85,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 0.80, "volatility": 0.03},
+          {"month": "2024-06", "price": 0.82, "volatility": 0.04},
+          {"month": "2024-07", "price": 0.88, "volatility": 0.05},
+          {"month": "2024-08", "price": 0.85, "volatility": 0.04},
+          {"month": "2024-09", "price": 0.86, "volatility": 0.03},
+          {"month": "2024-10", "price": 0.85, "volatility": 0.04}
+        ],
+        "seasonalityIndex": 1.02,
+        "forecastPriceNext30Days": 0.87,
+        "vendorVariation": {
+          "bestVendor": {"name": "Produce Vendor", "price": 0.83, "reliability": 0.98},
+          "worstVendor": {"name": "Sysco", "price": 0.90, "reliability": 0.95}
+        }
+      },
+      "spinach": {
+        "currentPrice": 3.25,
+        "sixMonthTrend": [
+          {"month": "2024-05", "price": 2.90, "volatility": 0.07},
+          {"month": "2024-06", "price": 3.10, "volatility": 0.08},
+          {"month": "2024-07", "price": 3.50, "volatility": 0.10},
+          {"month": "2024-08", "price": 3.25, "volatility": 0.08},
+          {"month": "2024-09", "price": 3.35, "volatility": 0.07},
+          {"month": "2024-10", "price": 3.25, "volatility": 0.09}
+        ],
+        "seasonalityIndex": 1.06,
+        "forecastPriceNext30Days": 3.40,
+        "vendorVariation": {
+          "bestVendor": {"name": "Produce Vendor", "price": 3.15, "reliability": 0.97},
+          "worstVendor": {"name": "Sysco", "price": 3.50, "reliability": 0.92}
+        }
+      }
+    }
+  },
+  "alerts": [
+    {
+      "alertId": "ALT-2024-10-07-001",
+      "type": "costOfGoodsSpike",
+      "severity": "high",
+      "message": "Lobster cost increased 18% week-over-week, now at $13.25/lb",
+      "recommendedAction": "Review menu pricing for lobster items, consider temporary price adjustment or supplier switch",
+      "timestamp": "2024-10-07T08:15:00Z",
+      "relatedKPIs": ["foodCost", "seafoodCost"],
+      "impactedItems": ["lobster-tails", "lobster-mac-and-cheese", "lobster-bisque"]
+    },
+    {
+      "alertId": "ALT-2024-10-07-002",
+      "type": "lowParInventory",
+      "severity": "medium",
+      "message": "Dry-Aged New York Strip below par: 18 lbs on hand, par is 35 lbs",
+      "recommendedAction": "Place urgent order with US Foods, expected delivery 24-48 hours",
+      "timestamp": "2024-10-07T06:30:00Z",
+      "relatedKPIs": ["inventoryLevels", "salesRev"],
+      "impactedItems": ["dry-aged-new-york-strip", "kona-crusted-strip"]
+    },
+    {
+      "alertId": "ALT-2024-10-06-001",
+      "type": "liquorPourCostVariance",
+      "severity": "medium",
+      "message": "Cabernet Sauvignon pour cost at 28.5%, above target of 25%",
+      "recommendedAction": "Review portion sizes and pricing, check for over-pouring or waste",
+      "timestamp": "2024-10-06T14:20:00Z",
+      "relatedKPIs": ["beverageCost", "liquorCost"],
+      "impactedItems": ["cabernet-sauvignon"]
+    },
+    {
+      "alertId": "ALT-2024-10-05-001",
+      "type": "trafficAnomaly",
+      "severity": "low",
+      "message": "Wednesday traffic 25% above forecast: 138 actual vs 110 predicted",
+      "recommendedAction": "Monitor for pattern, may indicate local event or marketing success",
+      "timestamp": "2024-10-05T22:00:00Z",
+      "relatedKPIs": ["trafficCount", "salesRev"],
+      "impactedItems": []
+    },
+    {
+      "alertId": "ALT-2024-10-04-001",
+      "type": "unusualLaborPercentage",
+      "severity": "high",
+      "message": "Labor cost at 35.2% of revenue, above target of 32%",
+      "recommendedAction": "Review scheduling, reduce overtime, optimize shift coverage",
+      "timestamp": "2024-10-04T23:45:00Z",
+      "relatedKPIs": ["laborCost", "laborPercentage"],
+      "impactedItems": []
+    },
+    {
+      "alertId": "ALT-2024-10-03-001",
+      "type": "itemOverUsage",
+      "severity": "medium",
+      "message": "Bone-In Ribeye usage 32% above forecast this week",
+      "recommendedAction": "Increase par level, adjust forecast, or investigate portion variance",
+      "timestamp": "2024-10-03T09:00:00Z",
+      "relatedKPIs": ["itemUsage", "inventoryLevels"],
+      "impactedItems": ["bone-in-ribeye"]
+    },
+    {
+      "alertId": "ALT-2024-10-02-001",
+      "type": "lowParInventory",
+      "severity": "high",
+      "message": "Lobster Tails critical: 12 tails on hand, par is 48",
+      "recommendedAction": "Emergency order required, contact Local Seafood for next-day delivery",
+      "timestamp": "2024-10-02T07:15:00Z",
+      "relatedKPIs": ["inventoryLevels", "seafoodInventory"],
+      "impactedItems": ["lobster-tails"]
+    },
+    {
+      "alertId": "ALT-2024-10-01-001",
+      "type": "costOfGoodsSpike",
+      "severity": "medium",
+      "message": "Sea Bass price increased 12% month-over-month",
+      "recommendedAction": "Consider menu price adjustment or temporary removal if trend continues",
+      "timestamp": "2024-10-01T10:30:00Z",
+      "relatedKPIs": ["foodCost", "seafoodCost"],
+      "impactedItems": ["seared-sea-bass"]
+    },
+    {
+      "alertId": "ALT-2024-09-30-001",
+      "type": "trafficAnomaly",
+      "severity": "low",
+      "message": "Saturday traffic 8% below forecast despite good weather",
+      "recommendedAction": "Review marketing campaigns, check competitor activity",
+      "timestamp": "2024-09-30T23:30:00Z",
+      "relatedKPIs": ["trafficCount", "salesRev"],
+      "impactedItems": []
+    },
+    {
+      "alertId": "ALT-2024-09-29-001",
+      "type": "itemOverUsage",
+      "severity": "low",
+      "message": "Truffle Fries usage 18% above forecast",
+      "recommendedAction": "Increase par level or investigate if portion sizes increased",
+      "timestamp": "2024-09-29T11:20:00Z",
+      "relatedKPIs": ["itemUsage", "sideItemUsage"],
+      "impactedItems": ["truffle-fries"]
+    }
+  ],
+  "executiveSummary": {
+    "month": "2024-10",
+    "revenueSummary": {
+      "totalRevenue": 449580.00,
+      "averageDailyRevenue": 14502.58,
+      "peakDayRevenue": 16850.00,
+      "lowDayRevenue": 12450.00,
+      "vsLastMonth": {"amount": 15230.00, "percent": 3.5},
+      "vsLastYear": {"amount": 22450.00, "percent": 5.3}
+    },
+    "costSummary": {
+      "totalCostOfGoods": 134874.00,
+      "foodCost": 101155.50,
+      "beverageCost": 13487.40,
+      "liquorCost": 20231.10,
+      "laborCost": 143865.60,
+      "totalOperatingCost": 278739.60,
+      "foodCostPercent": 30.0,
+      "laborCostPercent": 32.0,
+      "totalCostPercent": 62.0
+    },
+    "trafficSummary": {
+      "totalCovers": 5250,
+      "averageDailyCovers": 169,
+      "peakDayCovers": 196,
+      "lowDayCovers": 145,
+      "averageCheck": 85.63,
+      "vsLastMonth": {"covers": 125, "percent": 2.4},
+      "vsLastYear": {"covers": 250, "percent": 5.0}
+    },
+    "topOpportunities": [
+      {"item": "Increase weekend wine sales", "potentialRevenue": 8500.00, "confidence": 0.75},
+      {"item": "Optimize labor scheduling", "potentialSavings": 3200.00, "confidence": 0.80},
+      {"item": "Promote high-margin appetizers", "potentialRevenue": 4200.00, "confidence": 0.70},
+      {"item": "Reduce seafood waste", "potentialSavings": 1800.00, "confidence": 0.85}
+    ],
+    "topRisks": [
+      {"risk": "Lobster price volatility", "impact": "high", "probability": 0.65},
+      {"risk": "Labor cost trending upward", "impact": "medium", "probability": 0.70},
+      {"risk": "Competitor opening nearby", "impact": "medium", "probability": 0.40},
+      {"risk": "Key supplier reliability", "impact": "low", "probability": 0.30}
+    ],
+    "bestSellingCategories": [
+      {"category": "Dry-Aged Steaks", "revenue": 145230.00, "units": 1685, "margin": 67.2},
+      {"category": "Chef Specialties", "revenue": 89240.00, "units": 1620, "margin": 66.5},
+      {"category": "Seafood", "revenue": 67850.00, "units": 1720, "margin": 65.1},
+      {"category": "Beverages", "revenue": 45680.00, "units": 3280, "margin": 71.5},
+      {"category": "Appetizers", "revenue": 42350.00, "units": 2150, "margin": 62.8}
+    ],
+    "worstPerformingItems": [
+      {"item": "Tuna Steak", "revenue": 3420.00, "units": 85, "margin": 64.2, "reason": "Low popularity"},
+      {"item": "Field Greens", "revenue": 2890.00, "units": 210, "margin": 58.5, "reason": "Low margin"},
+      {"item": "Mocktails", "revenue": 1520.00, "units": 170, "margin": 55.0, "reason": "Low demand"}
+    ],
+    "forecastNextMonthSales": {
+      "predictedRevenue": 465000.00,
+      "confidence": 0.75,
+      "factors": ["seasonal increase", "holiday season approaching", "marketing campaign"]
+    },
+    "forecastNextMonthTraffic": {
+      "predictedCovers": 5450,
+      "confidence": 0.72,
+      "factors": ["holiday season", "local events", "weather patterns"]
+    }
+  },
+  "locationBenchmark": [
+    {
+      "benchmarkGroup": "chain average",
+      "metricName": "Food Cost Percentage",
+      "thisLocationValue": 30.0,
+      "benchmarkValue": 31.5,
+      "variance": -1.5,
+      "percentileRank": 65
+    },
+    {
+      "benchmarkGroup": "chain average",
+      "metricName": "Labor Cost Percentage",
+      "thisLocationValue": 32.0,
+      "benchmarkValue": 30.5,
+      "variance": 1.5,
+      "percentileRank": 35
+    },
+    {
+      "benchmarkGroup": "chain average",
+      "metricName": "Average Check",
+      "thisLocationValue": 85.63,
+      "benchmarkValue": 82.40,
+      "variance": 3.23,
+      "percentileRank": 72
+    },
+    {
+      "benchmarkGroup": "chain average",
+      "metricName": "Covers Per Day",
+      "thisLocationValue": 169,
+      "benchmarkValue": 155,
+      "variance": 14,
+      "percentileRank": 68
+    },
+    {
+      "benchmarkGroup": "chain average",
+      "metricName": "Revenue Per Square Foot",
+      "thisLocationValue": 425.50,
+      "benchmarkValue": 398.20,
+      "variance": 27.30,
+      "percentileRank": 70
+    },
+    {
+      "benchmarkGroup": "regional average",
+      "metricName": "Food Cost Percentage",
+      "thisLocationValue": 30.0,
+      "benchmarkValue": 32.2,
+      "variance": -2.2,
+      "percentileRank": 75
+    },
+    {
+      "benchmarkGroup": "regional average",
+      "metricName": "Labor Cost Percentage",
+      "thisLocationValue": 32.0,
+      "benchmarkValue": 33.5,
+      "variance": -1.5,
+      "percentileRank": 60
+    },
+    {
+      "benchmarkGroup": "regional average",
+      "metricName": "Average Check",
+      "thisLocationValue": 85.63,
+      "benchmarkValue": 78.90,
+      "variance": 6.73,
+      "percentileRank": 80
+    },
+    {
+      "benchmarkGroup": "regional average",
+      "metricName": "Wine Sales Percentage",
+      "thisLocationValue": 28.5,
+      "benchmarkValue": 24.2,
+      "variance": 4.3,
+      "percentileRank": 78
+    },
+    {
+      "benchmarkGroup": "regional average",
+      "metricName": "Steak Sales Percentage",
+      "thisLocationValue": 45.2,
+      "benchmarkValue": 42.8,
+      "variance": 2.4,
+      "percentileRank": 65
+    },
+    {
+      "benchmarkGroup": "similar-volume restaurants",
+      "metricName": "Food Cost Percentage",
+      "thisLocationValue": 30.0,
+      "benchmarkValue": 29.8,
+      "variance": 0.2,
+      "percentileRank": 52
+    },
+    {
+      "benchmarkGroup": "similar-volume restaurants",
+      "metricName": "Labor Cost Percentage",
+      "thisLocationValue": 32.0,
+      "benchmarkValue": 30.2,
+      "variance": 1.8,
+      "percentileRank": 38
+    },
+    {
+      "benchmarkGroup": "similar-volume restaurants",
+      "metricName": "Average Check",
+      "thisLocationValue": 85.63,
+      "benchmarkValue": 87.20,
+      "variance": -1.57,
+      "percentileRank": 45
+    },
+    {
+      "benchmarkGroup": "similar-volume restaurants",
+      "metricName": "Covers Per Day",
+      "thisLocationValue": 169,
+      "benchmarkValue": 172,
+      "variance": -3,
+      "percentileRank": 48
+    },
+    {
+      "benchmarkGroup": "similar-volume restaurants",
+      "metricName": "Revenue Per Square Foot",
+      "thisLocationValue": 425.50,
+      "benchmarkValue": 445.80,
+      "variance": -20.30,
+      "percentileRank": 42
+    },
+    {
+      "benchmarkGroup": "similar-volume restaurants",
+      "metricName": "Liquor Cost Percentage",
+      "thisLocationValue": 22.5,
+      "benchmarkValue": 21.8,
+      "variance": 0.7,
+      "percentileRank": 55
+    },
+    {
+      "benchmarkGroup": "chain average",
+      "metricName": "Liquor Cost Percentage",
+      "thisLocationValue": 22.5,
+      "benchmarkValue": 24.2,
+      "variance": -1.7,
+      "percentileRank": 70
+    },
+    {
+      "benchmarkGroup": "chain average",
+      "metricName": "Beverage Sales Percentage",
+      "thisLocationValue": 35.2,
+      "benchmarkValue": 32.8,
+      "variance": 2.4,
+      "percentileRank": 68
+    },
+    {
+      "benchmarkGroup": "regional average",
+      "metricName": "Liquor Cost Percentage",
+      "thisLocationValue": 22.5,
+      "benchmarkValue": 25.5,
+      "variance": -3.0,
+      "percentileRank": 82
+    },
+    {
+      "benchmarkGroup": "regional average",
+      "metricName": "Appetizer Sales Percentage",
+      "thisLocationValue": 9.4,
+      "benchmarkValue": 11.2,
+      "variance": -1.8,
+      "percentileRank": 40
+    }
+  ],
+  "aiInsights": [
+    {
+      "insightId": "INS-2024-10-07-001",
+      "insightType": "anomalyDetection",
+      "confidence": 0.88,
+      "explanation": "Lobster cost spike detected: 18% increase week-over-week exceeds normal volatility threshold of 12%",
+      "recommendedAction": "Switch to Local Seafood vendor temporarily, adjust menu pricing by $2-3 per lobster item",
+      "tags": ["inventory", "pricing", "seafood"]
+    },
+    {
+      "insightId": "INS-2024-10-07-002",
+      "insightType": "recommendedPurchaseOrders",
+      "confidence": 0.92,
+      "explanation": "Based on forecast and current inventory, recommend urgent order: 40 lbs Dry-Aged New York Strip, 36 Lobster Tails, 25 lbs Sea Bass",
+      "recommendedAction": "Create purchase order with US Foods and Local Seafood, prioritize next-day delivery",
+      "tags": ["inventory", "purchasing"]
+    },
+    {
+      "insightId": "INS-2024-10-06-001",
+      "insightType": "menuPricingOpportunities",
+      "confidence": 0.75,
+      "explanation": "Cabernet Sauvignon has 28.5% pour cost vs 25% target, but high demand suggests price elasticity allows $1-2 increase",
+      "recommendedAction": "Increase wine-by-glass price by $1.50, maintain bottle pricing",
+      "tags": ["pricing", "beverages"]
+    },
+    {
+      "insightId": "INS-2024-10-05-001",
+      "insightType": "predictedSellOutItems",
+      "confidence": 0.85,
+      "explanation": "Bone-In Ribeye trending toward sellout by Friday based on current usage rate and inventory levels",
+      "recommendedAction": "Increase par level to 50 lbs, place order for 35 lbs by Wednesday",
+      "tags": ["inventory", "forecasting"]
+    },
+    {
+      "insightId": "INS-2024-10-04-001",
+      "insightType": "laborOptimization",
+      "confidence": 0.80,
+      "explanation": "Labor cost at 35.2% driven by excessive overtime on weekends, particularly BOH staff",
+      "recommendedAction": "Adjust weekend scheduling: reduce overtime by 15 hours, cross-train FOH staff for light BOH tasks",
+      "tags": ["labor", "scheduling"]
+    },
+    {
+      "insightId": "INS-2024-10-03-001",
+      "insightType": "inventoryShrinkRisks",
+      "confidence": 0.70,
+      "explanation": "Truffle Fries usage 18% above forecast suggests possible portion variance or waste",
+      "recommendedAction": "Review portion sizes with kitchen staff, check for prep waste, verify scale calibration",
+      "tags": ["inventory", "waste"]
+    },
+    {
+      "insightId": "INS-2024-10-02-001",
+      "insightType": "ingredientSubstitutionRecommendations",
+      "confidence": 0.65,
+      "explanation": "Sea Bass price increased 12%, consider promoting Grilled Salmon as alternative (only 8% increase)",
+      "recommendedAction": "Feature Grilled Salmon on specials menu, maintain Sea Bass but reduce portion size slightly",
+      "tags": ["pricing", "menu"]
+    },
+    {
+      "insightId": "INS-2024-10-01-001",
+      "insightType": "trafficDrivers",
+      "confidence": 0.82,
+      "explanation": "Wednesday traffic spike correlates with local business happy hour promotions, suggests opportunity for weekly event",
+      "recommendedAction": "Launch Wednesday happy hour promotion targeting local businesses, extend to 7pm",
+      "tags": ["traffic", "marketing"]
+    },
+    {
+      "insightId": "INS-2024-09-30-001",
+      "insightType": "anomalyDetection",
+      "confidence": 0.78,
+      "explanation": "Saturday traffic 8% below forecast despite favorable conditions, competitor analysis shows new restaurant opening",
+      "recommendedAction": "Increase social media presence, launch weekend specials, review competitor pricing",
+      "tags": ["traffic", "competition"]
+    },
+    {
+      "insightId": "INS-2024-09-29-001",
+      "insightType": "recommendedPurchaseOrders",
+      "confidence": 0.90,
+      "explanation": "Forecast shows increased demand for high-margin items next week: Porterhouse, Lobster Tails, Cabernet Sauvignon",
+      "recommendedAction": "Increase par levels by 20% for these items, place orders by Monday",
+      "tags": ["inventory", "forecasting"]
+    }
+  ]
+}
+

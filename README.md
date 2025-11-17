@@ -1,6 +1,6 @@
-# DemandSync - Full Stack Demo
+# DemandSync 3.0
 
-This is a full-stack supply chain management application with a React frontend and FastAPI backend.
+Full-stack restaurant inventory, purchasing, forecasting, and operations management platform with React frontend and FastAPI backend.
 
 ## Prerequisites
 
