@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 from .database import SessionLocal, init_db
 from . import crud, schemas
 
-app = FastAPI(title="DemandSync 3.0 Backend", version="3.0.0")
+app = FastAPI(title="Comet Capital Grill Backend", version="3.0.0")
 
 # CORS middleware configuration
 app.add_middleware(

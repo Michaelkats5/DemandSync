@@ -1,6 +1,6 @@
-# DemandSync 3.0
+# Comet Capital Grill
 
-Full-stack restaurant inventory, purchasing, forecasting, and operations management platform with React frontend and FastAPI backend.
+Full-stack restaurant inventory, purchasing, forecasting, and operations management platform for Comet Capital Grill with React frontend and FastAPI backend.
 
 ## Prerequisites
 

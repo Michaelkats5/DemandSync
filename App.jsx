@@ -29,7 +29,7 @@ export default function App() {
         {/* Top: notices + orders (CTA) */}
         <div className="panel">
           <div className="header">
-            <h1>Del Frisco's Grille - Executive Dashboard</h1>
+            <h1>Comet Capital Grill - Executive Dashboard</h1>
             <p className="subtitle">Supply chain analytics, forecasting, and operational insights</p>
           </div>
 

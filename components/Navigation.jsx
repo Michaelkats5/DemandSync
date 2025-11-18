@@ -13,7 +13,7 @@ export default function Navigation() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4">
         <div className="flex items-center gap-4">
           <div>
-            <p className="text-xs uppercase tracking-wider text-slate-500">Del Frisco's Grille</p>
+            <p className="text-xs uppercase tracking-wider text-slate-500">Comet Capital Grill</p>
             <p className="text-sm text-slate-400">Supply Chain Analytics</p>
           </div>
         </div>

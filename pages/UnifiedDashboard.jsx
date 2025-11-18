@@ -551,7 +551,7 @@ export default function UnifiedDashboard() {
             </div>
 
             <div style={{ marginTop: 18 }}>
-              <p className="app-title">Del Frisco's Grille - Unified Dashboard</p>
+              <p className="app-title">Comet Capital Grill - Unified Dashboard</p>
               <p className="subtitle">
                 Restaurant operations, inventory, and cost in one place.
               </p>

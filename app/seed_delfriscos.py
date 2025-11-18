@@ -1,5 +1,5 @@
 """
-Seed script for Del Frisco's Grille menu data and sample operational data.
+Seed script for Comet Capital Grill menu data and sample operational data.
 Run with: python -m app.seed_delfriscos
 """
 from __future__ import annotations
@@ -21,16 +21,16 @@ def get_season(d: date) -> str:
         return "fall"
 
 def seed_delfriscos():
-    """Seed Del Frisco's Grille menu and operational data."""
+    """Seed Comet Capital Grill menu and operational data."""
     db = SessionLocal()
     try:
         init_db()
         
         # Get or create location
-        location = db.query(models.Location).filter_by(name="Del Frisco's Grille - Plano").first()
+        location = db.query(models.Location).filter_by(name="Comet Capital Grill - Plano").first()
         if not location:
             location = models.Location(
-                name="Del Frisco's Grille - Plano",
+                name="Comet Capital Grill - Plano",
                 region="North Texas",
                 address="5960 W Parker Rd, Plano, TX 75093",
                 active=True
@@ -138,7 +138,7 @@ def seed_delfriscos():
             db.add(cat_spirits)
             db.flush()
         
-        # Del Frisco's menu items - Meats
+        # Comet Capital Grill menu items - Meats
         meats = [
             {"sku": "DF-FILET-8OZ", "name": "Filet Mignon 8oz", "category": "meat", "shelf_life": 3, "unit_price": 42.00, "supplier": us_foods},
             {"sku": "DF-RIBEYE-16OZ", "name": "Ribeye 16oz", "category": "meat", "shelf_life": 3, "unit_price": 48.00, "supplier": us_foods},
@@ -321,7 +321,7 @@ def seed_delfriscos():
         ))
         
         db.commit()
-        print("Seeded Del Frisco's Grille data:")
+        print("Seeded Comet Capital Grill data:")
         print(f"  - Location: {location.name}")
         print(f"  - Products: {len(products)}")
         print(f"  - Cocktails: {len(cocktails)}")
