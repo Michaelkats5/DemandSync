@@ -1,28 +1,45 @@
 import React, { useState, useMemo } from "react";
-import { Link } from "react-router-dom";
 import ChatBot from "../components/ChatBot.jsx";
 import { INVENTORY_MASTER } from "../data/inventoryMaster.js";
+import { DSPageLayout, DSCard, DSStatsBox, DSGrid, DSButtonPrimary, DSButtonSecondary } from "../components/design-system";
+import { useLocation } from "../context/LocationContext";
 
 export default function ViewInventory() {
+  const { selectedLocation, setSelectedLocation, getCurrentLocationData } = useLocation();
   const [activeTab, setActiveTab] = useState("category");
   const [categoryFilter, setCategoryFilter] = useState("All Categories");
   const [storageFilter, setStorageFilter] = useState("All Storage Areas");
   const [searchQuery, setSearchQuery] = useState("");
 
   const inventoryItems = useMemo(() => {
-    let items = INVENTORY_MASTER.map(item => {
-      const difference = item.currentOnHand - item.parLevel;
-      const daysOnHand = item.avgDailyUsage > 0 ? (item.currentOnHand / item.avgDailyUsage).toFixed(1) : 999;
-      const status = difference < 0 ? "below" : difference > item.parLevel * 0.2 ? "over" : "ok";
+    // Get location-specific inventory data
+    const locationData = getCurrentLocationData();
+    const locationInventory = locationData?.inventory || [];
+    
+    // Map location inventory to expected format
+    let items = locationInventory.map(item => {
+      const onHand = item.quantity || item.currentOnHand || 0;
+      const parLevel = item.parLevel || 0;
+      const difference = onHand - parLevel;
+      const avgDailyUsage = item.avgDailyUsage || (parLevel / 7); // Estimate if not available
+      const daysOnHand = avgDailyUsage > 0 ? (onHand / avgDailyUsage).toFixed(1) : 999;
+      const status = difference < 0 ? "below" : difference > parLevel * 0.2 ? "over" : "ok";
+      
       return {
         ...item,
-        storageArea: item.storageLocation,
-        onHand: item.currentOnHand,
-        parLevel: item.parLevel,
+        id: item.id,
+        name: item.name,
+        category: item.category,
+        storageArea: item.storageLocation || 'Main Storage',
+        onHand: onHand,
+        parLevel: parLevel,
+        unit: item.unit || 'ea',
         difference,
-        avgDailyUsage: item.avgDailyUsage,
+        avgDailyUsage: avgDailyUsage,
         daysOnHand: parseFloat(daysOnHand),
-        status
+        status,
+        cost: item.cost || 0,
+        supplier: item.supplier || 'Unknown'
       };
     });
 
@@ -30,30 +47,34 @@ export default function ViewInventory() {
       items = items.filter(item => item.category === categoryFilter);
     }
     if (storageFilter !== "All Storage Areas") {
-      items = items.filter(item => item.storageLocation === storageFilter);
+      items = items.filter(item => (item.storageArea || item.storageLocation || 'Main Storage') === storageFilter);
     }
     if (searchQuery) {
       items = items.filter(item => 
         item.name.toLowerCase().includes(searchQuery.toLowerCase())
       );
     }
-
+    
     if (activeTab === "slow") {
       items = items.filter(item => item.daysOnHand > 14);
     }
 
     return items;
-  }, [categoryFilter, storageFilter, searchQuery, activeTab]);
+  }, [getCurrentLocationData, categoryFilter, storageFilter, searchQuery, activeTab]);
 
   const summary = useMemo(() => {
-    const totalValue = inventoryItems.reduce((sum, item) => sum + (item.currentOnHand * item.unitCost), 0);
+    const totalValue = inventoryItems.reduce((sum, item) => {
+      const onHand = item.onHand || item.quantity || item.currentOnHand || 0;
+      const cost = item.cost || item.unitCost || 0;
+      return sum + (onHand * cost);
+    }, 0);
     const belowPar = inventoryItems.filter(item => item.status === "below").length;
     const overPar = inventoryItems.filter(item => item.status === "over").length;
     const avgDaysOnHand = inventoryItems.length > 0 
       ? inventoryItems.reduce((sum, item) => sum + item.daysOnHand, 0) / inventoryItems.length 
       : 0;
     return {
-      totalValue,
+      totalValue: isNaN(totalValue) ? 0 : totalValue,
       belowPar,
       overPar,
       daysOfCover: avgDaysOnHand.toFixed(1)
@@ -61,146 +82,165 @@ export default function ViewInventory() {
   }, [inventoryItems]);
 
   return (
-    <>
-      <style>{`
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
-        body { background: radial-gradient(circle at top, #e6f4ff 0, #b9e6ff 35%, #8ad0ff 100%); padding: 24px; color: #0f172a; }
-        .page-container { max-width: 1400px; margin: 0 auto; }
-        .header-card { background: linear-gradient(135deg, #0ea5e9, #38bdf8); color: white; padding: 24px; border-radius: 24px; margin-bottom: 24px; }
-        .page-title { font-size: 28px; font-weight: 600; margin-bottom: 8px; }
-        .page-subtitle { font-size: 14px; opacity: 0.9; }
-        .filter-bar { background: #f9fbff; padding: 16px; border-radius: 16px; margin-bottom: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
-        .filter-item select, .filter-item input { width: 100%; padding: 8px 12px; border: 1px solid #dbeafe; border-radius: 8px; font-size: 14px; }
-        .summary-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
-        .summary-card { background: white; padding: 20px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .summary-label { font-size: 12px; color: #6b7280; text-transform: uppercase; margin-bottom: 8px; }
-        .summary-value { font-size: 24px; font-weight: 600; color: #0ea5e9; }
-        .tabs { display: flex; gap: 8px; margin-bottom: 16px; }
-        .tab { padding: 10px 20px; border-radius: 8px; background: white; border: 1px solid #dbeafe; cursor: pointer; font-size: 14px; }
-        .tab.active { background: #0ea5e9; color: white; border-color: #0ea5e9; }
-        .table-card { background: white; padding: 20px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        table { width: 100%; border-collapse: collapse; }
-        th { text-align: left; padding: 12px; background: #eff6ff; color: #6b7280; font-size: 12px; font-weight: 600; }
-        td { padding: 12px; border-top: 1px solid #e5e7eb; font-size: 13px; }
-        tr:hover { background: #f9fafb; }
-        .status-below { color: #b91c1c; font-weight: 600; }
-        .status-over { color: #f59e0b; font-weight: 600; }
-        .action-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
-        .btn { padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer; border: none; }
-        .btn-primary { background: #0ea5e9; color: white; }
-        .btn-secondary { background: white; color: #0ea5e9; border: 1px solid #0ea5e9; }
-      `}</style>
-      
-      <div className="page-container">
-        <div className="header-card">
-          <Link to="/" style={{ color: "white", textDecoration: "none", fontSize: 14, marginBottom: 16, display: "block" }}>← Back to Dashboard</Link>
-          <h1 className="page-title">View Inventory</h1>
-          <p className="page-subtitle">Review on hand quantity versus par levels for all categories</p>
+    <DSPageLayout 
+      title="View Inventory"
+      subtitle="Review on hand quantity versus par levels for all categories"
+    >
+      {/* Filter Bar */}
+      <DSCard className="mb-6">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px' }}>
+          <select 
+            value={selectedLocation} 
+            onChange={(e) => setSelectedLocation(e.target.value)}
+            style={{ padding: '8px 12px', border: '1px solid #fed7aa', borderRadius: '8px', fontSize: '14px', background: 'white' }}
+          >
+            <option>Plano</option>
+            <option>Addison</option>
+            <option>Uptown</option>
+            <option>Irving</option>
+          </select>
+          <select value={categoryFilter} onChange={(e) => setCategoryFilter(e.target.value)} style={{ padding: '8px 12px', border: '1px solid #fed7aa', borderRadius: '8px', fontSize: '14px', background: 'white' }}>
+            <option>All Categories</option>
+            <option>Produce</option>
+            <option>Meats</option>
+            <option>Dry Storage</option>
+            <option>Spices</option>
+            <option>Liquor</option>
+            <option>Wine</option>
+          </select>
+          <select value={storageFilter} onChange={(e) => setStorageFilter(e.target.value)} style={{ padding: '8px 12px', border: '1px solid #fed7aa', borderRadius: '8px', fontSize: '14px', background: 'white' }}>
+            <option>All Storage Areas</option>
+            <option>Cooler</option>
+            <option>Freezer</option>
+            <option>Dry</option>
+            <option>Bar</option>
+            <option>Wine Cellar</option>
+          </select>
+          <input type="text" placeholder="Search items..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} style={{ padding: '8px 12px', border: '1px solid #fed7aa', borderRadius: '8px', fontSize: '14px' }} />
         </div>
+      </DSCard>
 
-        <div className="filter-bar">
-          <div className="filter-item">
-            <select>
-              <option>Uptown Dallas</option>
-              <option>Plano</option>
-              <option>Houston</option>
-            </select>
-          </div>
-          <div className="filter-item">
-            <select value={categoryFilter} onChange={(e) => setCategoryFilter(e.target.value)}>
-              <option>All Categories</option>
-              <option>Produce</option>
-              <option>Meats</option>
-              <option>Dry Storage</option>
-              <option>Spices</option>
-              <option>Liquor</option>
-              <option>Wine</option>
-            </select>
-          </div>
-          <div className="filter-item">
-            <select value={storageFilter} onChange={(e) => setStorageFilter(e.target.value)}>
-              <option>All Storage Areas</option>
-              <option>Cooler</option>
-              <option>Freezer</option>
-              <option>Dry</option>
-              <option>Bar</option>
-              <option>Wine Cellar</option>
-            </select>
-          </div>
-          <div className="filter-item">
-            <input type="text" placeholder="Search items..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
-          </div>
+      {/* Summary Cards */}
+      <DSGrid cols={4} gap={4} className="mb-6">
+        <DSStatsBox label="Total Inventory Value" value={summary.totalValue} prefix="$" />
+        <div style={{ color: '#b91c1c' }}>
+          <DSStatsBox label="Items Below Par" value={summary.belowPar} />
         </div>
-
-        <div className="summary-strip">
-          <div className="summary-card">
-            <div className="summary-label">Total Inventory Value</div>
-            <div className="summary-value">${summary.totalValue.toLocaleString()}</div>
-          </div>
-          <div className="summary-card">
-            <div className="summary-label">Items Below Par</div>
-            <div className="summary-value" style={{ color: "#b91c1c" }}>{summary.belowPar}</div>
-          </div>
-          <div className="summary-card">
-            <div className="summary-label">Items Over Par</div>
-            <div className="summary-value" style={{ color: "#f59e0b" }}>{summary.overPar}</div>
-          </div>
-          <div className="summary-card">
-            <div className="summary-label">Days of Cover</div>
-            <div className="summary-value">{summary.daysOfCover}</div>
-          </div>
+        <div style={{ color: '#f59e0b' }}>
+          <DSStatsBox label="Items Over Par" value={summary.overPar} />
         </div>
+        <DSStatsBox label="Days of Cover" value={summary.daysOfCover} suffix=" days" />
+      </DSGrid>
 
-        <div className="table-card">
-          <div className="tabs">
-            <button className={`tab ${activeTab === "category" ? "active" : ""}`} onClick={() => setActiveTab("category")}>By Category</button>
-            <button className={`tab ${activeTab === "storage" ? "active" : ""}`} onClick={() => setActiveTab("storage")}>By Storage Area</button>
-            <button className={`tab ${activeTab === "slow" ? "active" : ""}`} onClick={() => setActiveTab("slow")}>Slow Movers</button>
-          </div>
-          <div style={{ maxHeight: "600px", overflowY: "auto" }}>
-            <table>
-              <thead style={{ position: "sticky", top: 0, background: "#eff6ff", zIndex: 10 }}>
-                <tr>
-                  <th>Item</th>
-                  <th>Category</th>
-                  <th>Storage Area</th>
-                  <th>On Hand</th>
-                  <th>Par Level</th>
-                  <th>Difference</th>
-                  <th>Avg Daily Usage</th>
-                  <th>Days On Hand</th>
-                  <th>Status</th>
+      {/* Table Card */}
+      <DSCard>
+        <div style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
+          <button 
+            onClick={() => setActiveTab("category")}
+            style={{
+              padding: '10px 20px',
+              borderRadius: '8px',
+              background: activeTab === "category" ? '#f97316' : 'white',
+              color: activeTab === "category" ? 'white' : '#1f2937',
+              border: '1px solid #fed7aa',
+              cursor: 'pointer',
+              fontSize: '14px',
+              fontWeight: 500
+            }}
+          >
+            By Category
+          </button>
+          <button 
+            onClick={() => setActiveTab("storage")}
+            style={{
+              padding: '10px 20px',
+              borderRadius: '8px',
+              background: activeTab === "storage" ? '#f97316' : 'white',
+              color: activeTab === "storage" ? 'white' : '#1f2937',
+              border: '1px solid #fed7aa',
+              cursor: 'pointer',
+              fontSize: '14px',
+              fontWeight: 500
+            }}
+          >
+            By Storage Area
+          </button>
+          <button 
+            onClick={() => setActiveTab("slow")}
+            style={{
+              padding: '10px 20px',
+              borderRadius: '8px',
+              background: activeTab === "slow" ? '#f97316' : 'white',
+              color: activeTab === "slow" ? 'white' : '#1f2937',
+              border: '1px solid #fed7aa',
+              cursor: 'pointer',
+              fontSize: '14px',
+              fontWeight: 500
+            }}
+          >
+            Slow Movers
+          </button>
+        </div>
+        <div style={{ maxHeight: '600px', overflowY: 'auto' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+            <thead style={{ position: 'sticky', top: 0, background: '#fff7ed', zIndex: 10 }}>
+              <tr>
+                <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Item</th>
+                <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Category</th>
+                <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Storage Area</th>
+                <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>On Hand</th>
+                <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Par Level</th>
+                <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Difference</th>
+                <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Avg Daily Usage</th>
+                <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Days On Hand</th>
+                <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {inventoryItems.map(item => (
+                <tr 
+                  key={item.id} 
+                  style={{ 
+                    borderTop: '1px solid #e5e7eb',
+                    backgroundColor: item.status === "below" ? "#fee2e2" : item.status === "over" ? "#fef3c7" : "transparent"
+                  }}
+                >
+                  <td style={{ padding: '12px', fontSize: '13px' }}>{item.name}</td>
+                  <td style={{ padding: '12px', fontSize: '13px' }}>{item.category}</td>
+                  <td style={{ padding: '12px', fontSize: '13px' }}>{item.storageArea}</td>
+                  <td style={{ padding: '12px', fontSize: '13px' }}>{item.onHand}</td>
+                  <td style={{ padding: '12px', fontSize: '13px' }}>{item.parLevel}</td>
+                  <td style={{ 
+                    padding: '12px', 
+                    fontSize: '13px',
+                    color: item.difference < 0 ? '#b91c1c' : item.difference > 0 ? '#f59e0b' : '#1f2937',
+                    fontWeight: item.difference !== 0 ? 600 : 400
+                  }}>
+                    {item.difference > 0 ? "+" : ""}{item.difference}
+                  </td>
+                  <td style={{ padding: '12px', fontSize: '13px' }}>{item.avgDailyUsage}</td>
+                  <td style={{ padding: '12px', fontSize: '13px' }}>{item.daysOnHand}</td>
+                  <td style={{ 
+                    padding: '12px', 
+                    fontSize: '13px',
+                    color: item.status === "below" ? '#b91c1c' : item.status === "over" ? '#f59e0b' : '#1f2937',
+                    fontWeight: item.status !== "ok" ? 600 : 400
+                  }}>
+                    {item.status === "below" ? "Below Par" : item.status === "over" ? "Over Par" : "OK"}
+                  </td>
                 </tr>
-              </thead>
-              <tbody>
-                {inventoryItems.map(item => (
-                  <tr key={item.id} style={{ backgroundColor: item.status === "below" ? "#fee2e2" : item.status === "over" ? "#fef3c7" : "transparent" }}>
-                    <td>{item.name}</td>
-                    <td>{item.category}</td>
-                    <td>{item.storageArea}</td>
-                    <td>{item.onHand}</td>
-                    <td>{item.parLevel}</td>
-                    <td className={item.difference < 0 ? "status-below" : item.difference > 0 ? "status-over" : ""}>{item.difference > 0 ? "+" : ""}{item.difference}</td>
-                    <td>{item.avgDailyUsage}</td>
-                    <td>{item.daysOnHand}</td>
-                    <td className={item.status === "below" ? "status-below" : item.status === "over" ? "status-over" : ""}>
-                      {item.status === "below" ? "Below Par" : item.status === "over" ? "Over Par" : "OK"}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="action-buttons">
-            <button className="btn btn-secondary">Export Inventory Snapshot</button>
-            <button className="btn btn-secondary">Print Count Sheets</button>
-            <button className="btn btn-secondary">Schedule Next Count</button>
-            <button className="btn btn-primary">Create Transfer</button>
-          </div>
+              ))}
+            </tbody>
+          </table>
         </div>
-      </div>
+        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '24px' }}>
+          <DSButtonSecondary>Export Inventory Snapshot</DSButtonSecondary>
+          <DSButtonSecondary>Print Count Sheets</DSButtonSecondary>
+          <DSButtonSecondary>Schedule Next Count</DSButtonSecondary>
+          <DSButtonPrimary>Create Transfer</DSButtonPrimary>
+        </div>
+      </DSCard>
       <ChatBot />
-    </>
+    </DSPageLayout>
   );
 }
-

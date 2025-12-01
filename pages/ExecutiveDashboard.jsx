@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "../components/Navigation.jsx";
+import { DemandSyncLogo } from "../components/DemandSyncLogo.jsx";
 import AlertCard from "../components/restaurant/AlertCard.jsx";
 import KpiCard from "../components/restaurant/KpiCard.jsx";
 import ActionButton from "../components/restaurant/ActionButton.jsx";
@@ -125,6 +126,9 @@ export default function ExecutiveDashboard() {
           {/* Header */}
           <header className="mb-6 flex flex-col gap-4 border-b border-slate-800 pb-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
+              <div style={{ marginBottom: '12px' }}>
+                <DemandSyncLogo size={32} color="#FF7A00" />
+              </div>
               <h1 className="text-2xl font-semibold text-slate-50">Executive Overview</h1>
               <p className="mt-1 text-sm text-slate-400">
                 Restaurant focused operations, inventory, and cost insights.
@@ -132,10 +136,10 @@ export default function ExecutiveDashboard() {
             </div>
             <div className="flex flex-wrap gap-3">
               <select className="rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100">
-                <option>Uptown Dallas</option>
                 <option>Plano</option>
-                <option>Houston</option>
-                <option>Austin</option>
+                <option>Addison</option>
+                <option>Uptown</option>
+                <option>Irving</option>
               </select>
               <input
                 type="date"

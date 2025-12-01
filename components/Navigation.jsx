@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import { DemandSyncLogo } from "./DemandSyncLogo";
 
 export default function Navigation() {
   const location = useLocation();
@@ -9,12 +10,13 @@ export default function Navigation() {
   ];
   
   return (
-    <nav className="sticky top-0 z-50 border-b border-slate-700 bg-slate-900">
+    <nav className="sticky top-0 z-50 border-b-2 border-orange-500 bg-gradient-to-r from-orange-500 to-orange-600">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4">
         <div className="flex items-center gap-4">
+          <DemandSyncLogo size={36} color="#FFFFFF" />
           <div>
-            <p className="text-xs uppercase tracking-wider text-slate-500">Comet Capital Grill</p>
-            <p className="text-sm text-slate-400">Supply Chain Analytics</p>
+            <p className="text-xs uppercase tracking-wider text-orange-100">Demand Sync</p>
+            <p className="text-sm text-white font-medium">Comet Capital Grill Intelligence Dashboard</p>
           </div>
         </div>
         
@@ -26,10 +28,10 @@ export default function Navigation() {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
+                className={`rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ${
                   isActive
-                    ? "bg-slate-800 text-slate-100"
-                    : "text-slate-400 hover:bg-slate-800/50 hover:text-slate-300"
+                    ? "bg-white text-orange-600 shadow-md"
+                    : "text-white hover:bg-white/20 hover:text-white"
                 }`}
               >
                 {item.label}

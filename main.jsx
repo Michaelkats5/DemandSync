@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
+import { LocationProvider } from "./context/LocationContext.jsx";
 import "./index.css";
 import "./App.css";
 
@@ -19,6 +20,7 @@ import ChefDashboard from "./pages/ChefDashboard.jsx";
 import BarDashboard from "./pages/BarDashboard.jsx";
 import ExecutiveDashboard from "./pages/ExecutiveDashboard.jsx";
 import UnifiedDashboard from "./pages/UnifiedDashboard.jsx";
+import AreaDirectorDashboard from "./pages/AreaDirectorDashboard.jsx";
 import PurchaseOrder from "./pages/PurchaseOrder.jsx";
 import CreatePurchaseOrder from "./pages/CreatePurchaseOrder.jsx";
 import ReceiveShipment from "./pages/ReceiveShipment.jsx";
@@ -53,6 +55,7 @@ const router = createBrowserRouter([
   { path: "/weekly-forecast-summary", element: <WeeklyForecastSummary /> },
   { path: "/import-data", element: <ImportData /> },
   { path: "/overview", element: <ExecutiveDashboard /> },
+  { path: "/area-director", element: <AreaDirectorDashboard /> },
   { path: "/legacy", element: <App /> },
   { path: "/orders/:id", element: <OrderDetail /> },
   { path: "/orders/:id/create", element: <CreateOrder /> },
@@ -76,6 +79,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <LocationProvider>
+      <RouterProvider router={router} />
+    </LocationProvider>
   </React.StrictMode>
 );
