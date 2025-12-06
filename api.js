@@ -27,6 +27,12 @@ export const createSupplier = (data) => api.post('/suppliers', data).then(r => r
 export const createOrder = (data) => api.post('/orders', data).then(r => r.data);
 export const upsertForecasts = (data) => api.post('/forecasts/upsert', data).then(r => r.data);
 
+export const getDemandForecast = (location) => 
+  api.get('/api/v1/forecast/demand', { params: { location } }).then(r => r.data);
+
+export const getHomeKPIs = (location) => 
+  api.get('/api/v1/home/kpis', { params: { location } }).then(r => r.data);
+
 export const checkHealth = () => api.get('/health').then(r => r.data);
 
 export default api;

@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 from .database import SessionLocal, init_db
 from . import crud, schemas
 
-app = FastAPI(title="DemandSync 3.0 Backend", version="3.0.0")
+app = FastAPI(title="Comet Capital Grill Backend", version="3.0.0")
 
 # CORS middleware configuration
 app.add_middleware(
@@ -76,9 +76,10 @@ app.include_router(api_router)
 
 # Include additional routers
 try:
-    from app.routers import external, forecast, dashboards
+    from app.routers import external, forecast, dashboards, home_kpis
     app.include_router(external.router, prefix="/api/v1")
     app.include_router(forecast.router, prefix="/api/v1")
     app.include_router(dashboards.router, prefix="/api/v1")
+    app.include_router(home_kpis.router, prefix="/api/v1")
 except ImportError as e:
     print(f"Warning: Could not import routers: {e}")

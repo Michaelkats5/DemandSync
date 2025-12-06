@@ -1,5 +1,5 @@
 """
-API endpoints for price forecasting.
+API endpoints for price forecasting and demand forecasting.
 """
 from __future__ import annotations
 from fastapi import APIRouter, Depends, HTTPException, Query
@@ -7,6 +7,7 @@ from sqlalchemy.orm import Session
 from app.database import SessionLocal
 from app import schemas, crud
 from app.services.price_forecast import forecast_item_price
+from app.services.model_logic import run_demand_forecast, ALLOWED_LOCATIONS
 
 router = APIRouter(prefix="/forecast", tags=["forecast"])
 
@@ -81,4 +82,44 @@ def get_vendor_volatility(
     if not vol:
         raise HTTPException(status_code=404, detail=f"Vendor volatility not found for {vendor}")
     return vol
+
+
+@router.get("/demand")
+def get_forecast(location: str = Query(..., description="Location: Plano, Addison, Uptown, Irving")):
+    """
+    Get demand forecast using Prophet model.
+    
+    Returns forecast data points and recommendations for the next 30 days.
+    """
+    if location not in ALLOWED_LOCATIONS:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Invalid location: {location}. Must be one of {ALLOWED_LOCATIONS}"
+        )
+    
+    try:
+        forecast_df, recs_df = run_demand_forecast(location)
+        
+        if forecast_df.empty or recs_df.empty:
+            raise HTTPException(
+                status_code=404,
+                detail="No forecast data available. Please ensure orders.json exists and contains data for this location."
+            )
+        
+        # Convert datetime columns to strings for JSON serialization
+        forecast_dict = forecast_df[["ds", "yhat", "yhat_lower", "yhat_upper"]].copy()
+        forecast_dict["ds"] = forecast_dict["ds"].dt.strftime("%Y-%m-%d")
+        
+        recs_dict = recs_df.copy()
+        recs_dict["ds"] = recs_dict["ds"].dt.strftime("%Y-%m-%d")
+        
+        return {
+            "location": location,
+            "forecast": forecast_dict.to_dict(orient="records"),
+            "recommendations": recs_dict.to_dict(orient="records"),
+        }
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Forecast error: {str(e)}")
 

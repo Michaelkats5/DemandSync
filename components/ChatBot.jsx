@@ -128,10 +128,10 @@ The goal is to create a fully conversational operational assistant that helps re
           width: 60px;
           height: 60px;
           border-radius: 50%;
-          background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+          background: linear-gradient(135deg, #f97316, #ea580c);
           color: white;
-          border: none;
-          box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);
+          border: 2px solid #f97316;
+          box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
           cursor: pointer;
           display: flex;
           align-items: center;
@@ -142,7 +142,8 @@ The goal is to create a fully conversational operational assistant that helps re
 
         .chatbot-button:hover {
           transform: scale(1.05);
-          box-shadow: 0 6px 16px rgba(14, 165, 233, 0.5);
+          box-shadow: 0 6px 16px rgba(249, 115, 22, 0.5);
+          border-color: #ea580c;
         }
 
         .chatbot-window {
@@ -160,12 +161,13 @@ The goal is to create a fully conversational operational assistant that helps re
         }
 
         .chatbot-header {
-          background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+          background: linear-gradient(135deg, #f97316, #ea580c);
           color: white;
           padding: 16px 20px;
           display: flex;
           justify-content: space-between;
           align-items: center;
+          border-bottom: 2px solid #f97316;
         }
 
         .chatbot-header h3 {
@@ -224,7 +226,7 @@ The goal is to create a fully conversational operational assistant that helps re
         }
 
         .message-bubble.user {
-          background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+          background: linear-gradient(135deg, #f97316, #ea580c);
           color: white;
           border-bottom-right-radius: 4px;
         }
@@ -254,12 +256,12 @@ The goal is to create a fully conversational operational assistant that helps re
 
         .chatbot-input:focus {
           outline: none;
-          border-color: #0ea5e9;
+          border-color: #f97316;
         }
 
         .chatbot-send {
           padding: 10px 20px;
-          background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+          background: linear-gradient(135deg, #f97316, #ea580c);
           color: white;
           border: none;
           border-radius: 8px;

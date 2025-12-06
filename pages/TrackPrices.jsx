@@ -1,25 +1,34 @@
 import React, { useState, useMemo } from "react";
-import { Link } from "react-router-dom";
 import ChatBot from "../components/ChatBot.jsx";
 import { INVENTORY_MASTER } from "../data/inventoryMaster.js";
+import { DSPageLayout, DSCard, DSStatsBox, DSGrid, DSButtonPrimary, DSButtonSecondary } from "../components/design-system";
+import { useLocation } from "../context/LocationContext";
 
 export default function TrackPrices() {
+  const { selectedLocation, setSelectedLocation, getCurrentLocationData } = useLocation();
   const [selectedItem, setSelectedItem] = useState(null);
   const [categoryFilter, setCategoryFilter] = useState("All Categories");
   const [vendorFilter, setVendorFilter] = useState("All Vendors");
   const [searchQuery, setSearchQuery] = useState("");
 
   const priceItems = useMemo(() => {
-    let items = INVENTORY_MASTER.map(item => {
+    const locationData = getCurrentLocationData();
+    const locationInventory = locationData?.inventory || [];
+    
+    let items = locationInventory.map(item => {
+      const currentPrice = item.cost || item.unitCost || 0;
       const priceChange = (Math.random() - 0.3) * 10;
-      const lastPrice = item.unitCost / (1 + priceChange / 100);
+      const lastPrice = currentPrice / (1 + priceChange / 100);
       return {
         ...item,
-        vendor: item.vendor,
+        id: item.id,
+        name: item.name,
+        category: item.category,
+        vendor: item.supplier || item.vendor || 'Unknown',
         lastPrice: parseFloat(lastPrice.toFixed(2)),
-        currentPrice: item.unitCost,
+        currentPrice: currentPrice,
         percentChange: parseFloat(priceChange.toFixed(1)),
-        lastChangeDate: new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+        lastChangeDate: item.lastOrder || new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
         watch: Math.random() > 0.7
       };
     });
@@ -28,7 +37,7 @@ export default function TrackPrices() {
       items = items.filter(item => item.category === categoryFilter);
     }
     if (vendorFilter !== "All Vendors") {
-      items = items.filter(item => item.vendor === vendorFilter);
+      items = items.filter(item => (item.vendor || item.supplier) === vendorFilter);
     }
     if (searchQuery) {
       items = items.filter(item => 
@@ -37,7 +46,7 @@ export default function TrackPrices() {
     }
 
     return items.sort((a, b) => Math.abs(b.percentChange) - Math.abs(a.percentChange));
-  }, [categoryFilter, vendorFilter, searchQuery]);
+  }, [getCurrentLocationData, categoryFilter, vendorFilter, searchQuery]);
 
   const metrics = useMemo(() => {
     const increases = priceItems.filter(item => item.percentChange > 0).length;
@@ -62,190 +71,153 @@ export default function TrackPrices() {
   ];
 
   return (
-    <>
-      <style>{`
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
-        body { background: radial-gradient(circle at top, #e6f4ff 0, #b9e6ff 35%, #8ad0ff 100%); padding: 24px; color: #0f172a; }
-        .page-container { max-width: 1400px; margin: 0 auto; }
-        .header-card { background: linear-gradient(135deg, #0ea5e9, #38bdf8); color: white; padding: 24px; border-radius: 24px; margin-bottom: 24px; }
-        .page-title { font-size: 28px; font-weight: 600; margin-bottom: 8px; }
-        .page-subtitle { font-size: 14px; opacity: 0.9; }
-        .filter-bar { background: #f9fbff; padding: 16px; border-radius: 16px; margin-bottom: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
-        .filter-item select, .filter-item input { width: 100%; padding: 8px 12px; border: 1px solid #dbeafe; border-radius: 8px; font-size: 14px; }
-        .metrics-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
-        .metric-card { background: white; padding: 20px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .metric-label { font-size: 12px; color: #6b7280; text-transform: uppercase; margin-bottom: 8px; }
-        .metric-value { font-size: 24px; font-weight: 600; }
-        .metric-positive { color: #22c55e; }
-        .metric-negative { color: #b91c1c; }
-        .split-layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 24px; margin-bottom: 24px; }
-        .panel-card { background: white; padding: 20px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .panel-title { font-size: 18px; font-weight: 600; margin-bottom: 16px; }
-        table { width: 100%; border-collapse: collapse; }
-        th { text-align: left; padding: 12px; background: #eff6ff; color: #6b7280; font-size: 12px; font-weight: 600; }
-        td { padding: 12px; border-top: 1px solid #e5e7eb; font-size: 13px; }
-        tr:hover { background: #f9fafb; cursor: pointer; }
-        .price-increase { color: #b91c1c; font-weight: 600; }
-        .price-decrease { color: #22c55e; font-weight: 600; }
-        .chart-placeholder { height: 300px; background: #f9fafb; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #6b7280; }
-        .action-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
-        .btn { padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer; border: none; }
-        .btn-primary { background: #0ea5e9; color: white; }
-        .btn-secondary { background: white; color: #0ea5e9; border: 1px solid #0ea5e9; }
-      `}</style>
-      
-      <div className="page-container">
-        <div className="header-card">
-          <Link to="/" style={{ color: "white", textDecoration: "none", fontSize: 14, marginBottom: 16, display: "block" }}>← Back to Dashboard</Link>
-          <h1 className="page-title">Track Prices</h1>
-          <p className="page-subtitle">Monitor item cost changes across vendors and time</p>
+    <DSPageLayout 
+      title="Track Prices"
+      subtitle="Monitor item cost changes across vendors and time"
+    >
+      <DSCard className="mb-6">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px' }}>
+          <select 
+            value={selectedLocation} 
+            onChange={(e) => setSelectedLocation(e.target.value)}
+            style={{ padding: '8px 12px', border: '1px solid #fed7aa', borderRadius: '8px', fontSize: '14px', background: 'white' }}
+          >
+            <option>Plano</option>
+            <option>Addison</option>
+            <option>Uptown</option>
+            <option>Irving</option>
+          </select>
+          <select value={vendorFilter} onChange={(e) => setVendorFilter(e.target.value)} style={{ padding: '8px 12px', border: '1px solid #fed7aa', borderRadius: '8px', fontSize: '14px', background: 'white' }}>
+            <option>All Vendors</option>
+            <option>US Foods</option>
+            <option>Sysco</option>
+            <option>Produce Vendor</option>
+            <option>Seafood Vendor</option>
+            <option>Republic National</option>
+            <option>Wine Vendor</option>
+          </select>
+          <select value={categoryFilter} onChange={(e) => setCategoryFilter(e.target.value)} style={{ padding: '8px 12px', border: '1px solid #fed7aa', borderRadius: '8px', fontSize: '14px', background: 'white' }}>
+            <option>All Categories</option>
+            <option>Produce</option>
+            <option>Meats</option>
+            <option>Dry Storage</option>
+            <option>Spices</option>
+            <option>Liquor</option>
+            <option>Wine</option>
+          </select>
+          <input type="date" defaultValue={new Date().toISOString().split('T')[0]} style={{ padding: '8px 12px', border: '1px solid #fed7aa', borderRadius: '8px', fontSize: '14px' }} />
+          <input type="text" placeholder="Search by item..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} style={{ padding: '8px 12px', border: '1px solid #fed7aa', borderRadius: '8px', fontSize: '14px' }} />
         </div>
+      </DSCard>
 
-        <div className="filter-bar">
-          <div className="filter-item">
-            <select>
-              <option>Uptown Dallas</option>
-              <option>Plano</option>
-              <option>Houston</option>
-            </select>
-          </div>
-          <div className="filter-item">
-            <select value={vendorFilter} onChange={(e) => setVendorFilter(e.target.value)}>
-              <option>All Vendors</option>
-              <option>US Foods</option>
-              <option>Sysco</option>
-              <option>Produce Vendor</option>
-              <option>Seafood Vendor</option>
-              <option>Republic National</option>
-              <option>Wine Vendor</option>
-            </select>
-          </div>
-          <div className="filter-item">
-            <select value={categoryFilter} onChange={(e) => setCategoryFilter(e.target.value)}>
-              <option>All Categories</option>
-              <option>Produce</option>
-              <option>Meats</option>
-              <option>Dry Storage</option>
-              <option>Spices</option>
-              <option>Liquor</option>
-              <option>Wine</option>
-            </select>
-          </div>
-          <div className="filter-item">
-            <input type="date" defaultValue={new Date().toISOString().split('T')[0]} />
-          </div>
-          <div className="filter-item">
-            <input type="text" placeholder="Search by item..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
-          </div>
+      <DSGrid cols={4} gap={4} className="mb-6">
+        <div>
+          <DSStatsBox label="Avg Price Change This Month" value={metrics.avgPriceChange} prefix="+" suffix="%" />
         </div>
-
-        <div className="metrics-row">
-          <div className="metric-card">
-            <div className="metric-label">Avg Price Change This Month</div>
-            <div className="metric-value metric-positive">+{metrics.avgPriceChange}%</div>
-          </div>
-          <div className="metric-card">
-            <div className="metric-label">Items With Price Increase</div>
-            <div className="metric-value metric-negative">{metrics.priceIncreases}</div>
-          </div>
-          <div className="metric-card">
-            <div className="metric-label">Items With Price Decrease</div>
-            <div className="metric-value metric-positive">{metrics.priceDecreases}</div>
-          </div>
-          <div className="metric-card">
-            <div className="metric-label">Largest Single Change</div>
-            <div className="metric-value metric-negative">+{metrics.largestChange}%</div>
-          </div>
+        <div>
+          <DSStatsBox label="Items With Price Increase" value={metrics.priceIncreases} />
         </div>
-
-        <div className="split-layout">
-          <div className="panel-card">
-            <h2 className="panel-title">Price History</h2>
-            <div style={{ maxHeight: "500px", overflowY: "auto" }}>
-              <table>
-                <thead style={{ position: "sticky", top: 0, background: "#eff6ff", zIndex: 10 }}>
-                  <tr>
-                    <th>Item Name</th>
-                    <th>Category</th>
-                    <th>Vendor</th>
-                    <th>Last Price</th>
-                    <th>Current Price</th>
-                    <th>% Change</th>
-                    <th>Last Change</th>
-                    <th>Watch</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {priceItems.map(item => (
-                    <tr key={item.id} onClick={() => setSelectedItem(item)}>
-                      <td>{item.name}</td>
-                      <td>{item.category}</td>
-                      <td>{item.vendor}</td>
-                      <td>${item.lastPrice.toFixed(2)}</td>
-                      <td>${item.currentPrice.toFixed(2)}</td>
-                      <td className={item.percentChange > 0 ? "price-increase" : "price-decrease"}>
-                        {item.percentChange > 0 ? "+" : ""}{item.percentChange.toFixed(1)}%
-                      </td>
-                      <td>{item.lastChangeDate}</td>
-                      <td>{item.watch ? "⭐" : ""}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div className="panel-card">
-            <h2 className="panel-title">Price Chart</h2>
-            {selectedItem ? (
-              <div className="chart-placeholder">
-                Price trend for {selectedItem.name}<br />
-                Last 12 weeks / 6 months
-              </div>
-            ) : (
-              <div className="chart-placeholder">Select an item to view price chart</div>
-            )}
-          </div>
+        <div>
+          <DSStatsBox label="Items With Price Decrease" value={metrics.priceDecreases} />
         </div>
+        <div>
+          <DSStatsBox label="Largest Single Change" value={metrics.largestChange} prefix="+" suffix="%" />
+        </div>
+      </DSGrid>
 
-        <div className="panel-card">
-          <h2 className="panel-title">Vendor Comparison</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Vendor 1</th>
-                <th>Price 1</th>
-                <th>Vendor 2</th>
-                <th>Price 2</th>
-                <th>Vendor 3</th>
-                <th>Price 3</th>
-              </tr>
-            </thead>
-            <tbody>
-              {vendorComparison.map((item, idx) => (
-                <tr key={idx}>
-                  <td>{item.item}</td>
-                  <td>{item.vendor1}</td>
-                  <td>${item.price1.toFixed(2)}</td>
-                  <td>{item.vendor2}</td>
-                  <td>${item.price2.toFixed(2)}</td>
-                  <td>{item.vendor3}</td>
-                  <td>${item.price3.toFixed(2)}</td>
+      <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '24px', marginBottom: '24px' }}>
+        <DSCard>
+          <h2 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '16px', color: '#1f2937' }}>Price History</h2>
+          <div style={{ maxHeight: '500px', overflowY: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <thead style={{ position: 'sticky', top: 0, background: '#fff7ed', zIndex: 10 }}>
+                <tr>
+                  <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Item Name</th>
+                  <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Category</th>
+                  <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Vendor</th>
+                  <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Last Price</th>
+                  <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Current Price</th>
+                  <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>% Change</th>
+                  <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Last Change</th>
+                  <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Watch</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-          <div className="action-buttons">
-            <button className="btn btn-secondary">Export Price Report</button>
-            <button className="btn btn-secondary">Send Alert to Email</button>
-            <button className="btn btn-primary">Mark Price as Approved</button>
-            <button className="btn btn-secondary">Download Vendor Detail</button>
+              </thead>
+              <tbody>
+                {priceItems.map(item => (
+                  <tr key={item.id} onClick={() => setSelectedItem(item)} style={{ borderTop: '1px solid #e5e7eb', cursor: 'pointer' }}>
+                    <td style={{ padding: '12px', fontSize: '13px' }}>{item.name}</td>
+                    <td style={{ padding: '12px', fontSize: '13px' }}>{item.category}</td>
+                    <td style={{ padding: '12px', fontSize: '13px' }}>{item.vendor}</td>
+                    <td style={{ padding: '12px', fontSize: '13px' }}>${item.lastPrice.toFixed(2)}</td>
+                    <td style={{ padding: '12px', fontSize: '13px' }}>${item.currentPrice.toFixed(2)}</td>
+                    <td style={{ 
+                      padding: '12px', 
+                      fontSize: '13px',
+                      color: item.percentChange > 0 ? '#b91c1c' : '#22c55e',
+                      fontWeight: 600
+                    }}>
+                      {item.percentChange > 0 ? "+" : ""}{item.percentChange.toFixed(1)}%
+                    </td>
+                    <td style={{ padding: '12px', fontSize: '13px' }}>{item.lastChangeDate}</td>
+                    <td style={{ padding: '12px', fontSize: '13px' }}>{item.watch ? "⭐" : ""}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-        </div>
+        </DSCard>
+
+        <DSCard>
+          <h2 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '16px', color: '#1f2937' }}>Price Chart</h2>
+          {selectedItem ? (
+            <div style={{ height: '300px', background: '#f9fafb', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6b7280', flexDirection: 'column', gap: '8px' }}>
+              <div>Price trend for {selectedItem.name}</div>
+              <div style={{ fontSize: '12px' }}>Last 12 weeks / 6 months</div>
+            </div>
+          ) : (
+            <div style={{ height: '300px', background: '#f9fafb', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6b7280' }}>
+              Select an item to view price chart
+            </div>
+          )}
+        </DSCard>
       </div>
+
+      <DSCard>
+        <h2 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '16px', color: '#1f2937' }}>Vendor Comparison</h2>
+        <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+          <thead>
+            <tr>
+              <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Item</th>
+              <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Vendor 1</th>
+              <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Price 1</th>
+              <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Vendor 2</th>
+              <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Price 2</th>
+              <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Vendor 3</th>
+              <th style={{ textAlign: 'left', padding: '12px', background: '#fff7ed', color: '#6b7280', fontSize: '12px', fontWeight: 600 }}>Price 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            {vendorComparison.map((item, idx) => (
+              <tr key={idx} style={{ borderTop: '1px solid #e5e7eb' }}>
+                <td style={{ padding: '12px', fontSize: '13px' }}>{item.item}</td>
+                <td style={{ padding: '12px', fontSize: '13px' }}>{item.vendor1}</td>
+                <td style={{ padding: '12px', fontSize: '13px' }}>${item.price1.toFixed(2)}</td>
+                <td style={{ padding: '12px', fontSize: '13px' }}>{item.vendor2}</td>
+                <td style={{ padding: '12px', fontSize: '13px' }}>${item.price2.toFixed(2)}</td>
+                <td style={{ padding: '12px', fontSize: '13px' }}>{item.vendor3}</td>
+                <td style={{ padding: '12px', fontSize: '13px' }}>${item.price3.toFixed(2)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '24px' }}>
+          <DSButtonSecondary>Export Price Report</DSButtonSecondary>
+          <DSButtonSecondary>Send Alert to Email</DSButtonSecondary>
+          <DSButtonPrimary>Mark Price as Approved</DSButtonPrimary>
+          <DSButtonSecondary>Download Vendor Detail</DSButtonSecondary>
+        </div>
+      </DSCard>
       <ChatBot />
-    </>
+    </DSPageLayout>
   );
 }
-

@@ -189,3 +189,24 @@ class PriceForecastResponse(BaseModel):
     shelf_life_multiplier: float
     risk: str
     explanation: str
+
+# Demand forecasting schemas
+class DemandForecastPoint(BaseModel):
+    ds: str  # date string
+    yhat: float
+    yhat_lower: Optional[float] = None
+    yhat_upper: Optional[float] = None
+    trend: Optional[float] = None
+    seasonal: Optional[float] = None
+
+class DemandRecommendation(BaseModel):
+    ds: str  # date string
+    yhat: float
+    recommendation: str
+    location: str
+
+class DemandForecastResponse(BaseModel):
+    location: Optional[str] = None
+    forecast: List[DemandForecastPoint]
+    recommendations: List[DemandRecommendation]
+    message: Optional[str] = None
