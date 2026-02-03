@@ -1,6 +1,9 @@
 DemandSync - Restaurant Supply Chain Analytics Platform
+
 Submitted by: Michael Katongole (Team Project, For School Club)
+
 Full-stack restaurant inventory, purchasing, forecasting, and operations management platform with React frontend and FastAPI backend.
+
 DemandSync is a full-stack analytics platform designed to solve critical inefficiencies in restaurant supply chain management. Built from real-world experience in high-volume fine dining operations, this platform reduces food waste, optimizes inventory levels, and provides actionable insights for purchasing managers.
 
 
@@ -154,5 +157,36 @@ The frontend will be available at: http://localhost:3000
 - POST /suppliers - Create supplier
 - GET /orders - List orders
 - POST /orders - Create order
+
+Future Enhancements
+Planned features for future releases:
+
+-PostgreSQL database integration for production deployment
+-User authentication and role-based access control
+-Multi-location support for restaurant chains
+-Mobile application using React Native
+-Integration with POS systems (Toast, Square)
+-Advanced ML models (Random Forest, XGBoost)
+-Natural language query interface
+-Computer vision for automated inventory counting
+
+Contributing
+-This project was developed as part of the UT Dallas Artificial Intelligence Society. Contributions and feedback are welcome.
+
+License
+
+-Copyright 2025 Michael Katongole
+-Licensed under the Apache License, Version 2.0 (the "License");
+-you may not use this file except in compliance with the License.
+-You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+Contact
+Michael Katongole
 
 
